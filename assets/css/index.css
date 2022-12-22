@@ -80,6 +80,7 @@
 
 .header__link:hover {
 	color: #7872b9;
+	transition: 0.5s all;
 }
 
 /* ------------------------ Footer ------------------------ */
