@@ -13,15 +13,31 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<div class="header__logo"><img src="./assets/icons/logo.svg" alt="YouMi's logo" /></div>
-				<nav>
-					<ul class="header__menu">
-						<li><a href="./pages/about.html" target="_blank">О нас</a></li>
-						<li><a href="./pages/rates.html" target="_blank">Тарифы</a></li>
-						<li><a href="./pages/psychologists.html" target="_blank">Психологам</a></li>
-					</ul>
-				</nav>
+				<div class="header__wrapper">
+					<div class="header__logo"><img src="./assets/icons/logo.svg" alt="YouMi's logo" /></div>
+					<nav class="header__nav">
+						<ul class="header__menu">
+							<li><a href="./pages/about.html" target="_blank" class="header__link">О нас</a></li>
+							<li><a href="./pages/rates.html" target="_blank" class="header__link">Тарифы</a></li>
+							<li><a href="./pages/psychologists.html" target="_blank" class="header__link">Психологам</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
+		<section class="home-find">
+			<div class="container">
+				<div class="home-find__wrapper">
+					<div class="home-find__content">
+						<h1 class="home-find__title">Вместе мы справимся</h1>
+						<p class="home-find__subtitle">Найдите своего психолога онлайн</p>
+						<button class="button">Найти психолога</button>
+						<p class="home-find__descr">2770 руб. за 50 минут сессии</p>
+					</div>
+					<div class="home-find__picture"><img src="./assets/icons/home-find-img.svg" alt="image on sections with search" class="home-find__img" /></div>
+				</div>
+				<img src="./assets/icons/home-find-message.svg" alt="message icon on sections with search" class="home-find__icon-message" />
+			</div>
+		</section>
 	</body>
 </html>
