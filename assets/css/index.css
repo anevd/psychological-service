@@ -2,6 +2,9 @@
 	box-sizing: border-box;
 	font-family: "Montserrat";
 	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	border: none;
 }
 
 .container {
@@ -19,12 +22,15 @@
 	color: #7872b9;
 }
 
+.title_left {
+	text-align: left;
+}
+
 .button {
 	width: 380px;
 	height: 70px;
 	background: #7872b9;
 	border-radius: 15px;
-	border: none;
 	font-weight: 700;
 	font-size: 20px;
 	text-align: center;
@@ -32,6 +38,10 @@
 	color: #ffffff;
 	box-shadow: 9px 13px 0px -1px rgb(205 225 255);
 	cursor: pointer;
+}
+
+.button_big {
+	width: 410px;
 }
 
 .button:hover {
@@ -63,8 +73,6 @@
 .header__menu {
 	display: flex;
 	justify-content: space-between;
-	margin: 0;
-	padding: 0;
 	list-style: none;
 }
 
@@ -131,7 +139,6 @@
 }
 
 .footer__connection-title {
-	margin: 0;
 	font-size: 14px;
 	line-height: 20px;
 	letter-spacing: 0.01em;
@@ -139,7 +146,6 @@
 }
 
 .footer__connection-subtitle {
-	margin: 0;
 	margin-top: 6px;
 	font-weight: 600;
 	font-size: 18px;
@@ -156,8 +162,6 @@
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
 	gap: 47px;
-	margin: 0;
-	padding: 0;
 	list-style: none;
 }
 
@@ -215,7 +219,6 @@
 }
 
 .home-find__title {
-	margin: 0;
 	font-weight: 800;
 	font-size: 44px;
 	line-height: 57px;
@@ -224,7 +227,6 @@
 }
 
 .home-find__subtitle {
-	margin: 0;
 	margin-top: 10px;
 	margin-bottom: 81px;
 	width: 75%;
@@ -236,7 +238,6 @@
 }
 
 .home-find__descr {
-	margin: 0;
 	margin-top: 45px;
 	margin-left: 25px;
 	font-weight: 600;
@@ -304,7 +305,6 @@
 }
 
 .home-comfort__item-descr {
-	margin: 0;
 	margin-top: 15px;
 	font-size: 18px;
 	line-height: 25px;
@@ -321,10 +321,218 @@
 	margin: 15px 25px 0 25px;
 }
 
+.home-problems {
+	position: relative;
+	background-color: #f9fcff;
+	padding: 80px 0 99px 0;
+}
+
+.home-problems__subtitle {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 34px;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #4d4d52;
+	margin-bottom: 10px;
+}
+
+.home-problems__descr {
+	width: 49%;
+	margin: 0 auto;
+	margin-top: 20px;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #4d4d52;
+}
+
+.home-problems__icon-arrow {
+	position: absolute;
+	top: 35%;
+	right: 20%;
+	transform: rotate(27.19deg);
+}
+
+.home-problems__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 136px;
+	height: 120px;
+}
+
+.home-problems__wrapper-top,
+.home-problems__wrapper-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.home-problems__wrapper-top {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.home-problems__item {
+	width: max-content;
+	height: 50px;
+	padding: 11px 37px;
+	border: 2px solid #7872b9;
+	border-radius: 40px;
+	font-weight: 600;
+	font-size: 1.4vw;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: #7872b9;
+	cursor: default;
+}
+
+.home-problems__item:hover {
+	background-color: #7872b9;
+	color: #ffffff;
+	transition: 0.5s all;
+}
+
+.home-quality {
+	padding: 100px 0;
+}
+
+.home-quality__subtitle {
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 34px;
+	letter-spacing: 0.01em;
+	color: #4d4d52;
+}
+
+.home-quality__title {
+	width: 92%;
+	position: relative;
+}
+
+.home-quality__icon-line {
+	position: absolute;
+	bottom: -15%;
+	left: 46%;
+}
+
+.home-quality__descr {
+	width: 66%;
+	margin-top: 27px;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #4d4d52;
+}
+
+.home-quality__wrapper {
+	display: grid;
+	grid-template-columns: 40% 2.5% 1fr 2.5% 40%;
+	row-gap: 30px;
+	margin-top: 59px;
+}
+
+.home-quality__education,
+.home-quality__work-experience,
+.home-quality__learning,
+.home-quality__therapy {
+	background: #ebf5ff;
+	border-radius: 20px;
+}
+
+.home-quality__education,
+.home-quality__therapy {
+	display: flex;
+	padding: 20px 30px;
+}
+
+.home-quality__work-experience,
+.home-quality__learning {
+	padding: 42px 30px 42px 100px;
+}
+
+.home-quality__education {
+	grid-area: 1 / 1 / 2 / 4;
+}
+
+.home-quality__work-experience {
+	grid-area: 1 / 5 / 2 / 6;
+}
+
+.home-quality__learning {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.home-quality__therapy {
+	grid-area: 2 / 3 / 3 / 6;
+}
+
+.home-quality__item-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 34px;
+	letter-spacing: 0.01em;
+	color: #4d4d52;
+}
+
+.home-quality__item-descr {
+	margin-top: 15px;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #4d4d52;
+}
+
+.home-quality__item-text {
+	padding-left: 50px;
+}
+
+.home-quality__item-text_therapy {
+	padding-top: 22px;
+}
+
+.home-quality__item-descr_therapy {
+	width: 70%;
+}
+
+.home-quality__item-text_education {
+	padding-top: 28px;
+}
+
+.home-steps {
+	padding: 100px 0 131px 0;
+	background-color: #f9fcff;
+}
+
+.home-steps__wrapper {
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.home-steps__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home-steps__item-content {
+	position: relative;
+	width: 59%;
+	display: flex;
+}
+
+.home-steps__item-spot {
+	position: absolute;
+}
+
 /* ------------------------ About ------------------------ */
 
 /* ------------------------ Rates ------------------------ */
 
 /* ------------------------ Psychologists ------------------------ */
 
-/* ------------------------ Contacts ------------------------ */
+/* ------------------------ Contacts ------------------------ */ ;
