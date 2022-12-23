@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*section № 2, about-values*/
 .about-values {
-	padding-top: 89px;
+	padding: 89px 0 120px 0;
 }
 
 .about-values__wrapper {
@@ -370,16 +370,19 @@ h1, h2, h3, h4, h5, h6, p {
 .about-values__item {
 	position: relative;
 	width: calc(100%/3);
-	min-height: 316px;
+	height: 316px;
 	text-align: center;
 	background: #EBF5FF;
 	border-radius: 20px;
 }
 
+.about-values__item:nth-child(2) {
+	height: 339px;
+}
 
 .about-values__item-image {
 	position: absolute;
-	top: -34%;
+	top: -32%;
 	left: 25%;
 }
 
@@ -393,14 +396,116 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-values__item-text {
-	padding: 15px 30px 0 30px;
+	padding: 15px 30px 35px 30px;
 	font-size: 18px;
 	line-height: 25.2px;
 	letter-spacing: 0.01em;
 	color: #4D4D52;
 }
 
+/*section № 3, about-experts*/
+.about-experts {
+	position: relative;
+	padding: 80px 0 80px 0;
+	background: #F9FCFF;
+}
 
+.about-experts__subtitle {
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33.6px;	
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.about-experts__title-line {
+	position: absolute;
+}
+
+.about-experts__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 94px;
+}
+
+.about-experts__item {
+	text-align: center;
+	color: #4D4D52;
+	letter-spacing: 0.01em;
+}
+
+.about-experts__item-title {
+	margin: 30px 0 10px 0;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33.6px;
+}
+
+.about-experts__item-description {
+	font-size: 18px;
+	line-height: 25.2px;
+}
+
+/*section № 4, about-documents*/
+.about-documents {
+	padding: 100px 0 120px 0;
+}
+
+.about-documents__subtitle {
+	width: 71%;
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33.6px;
+}
+
+.about-documents__wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding-top: 60px;
+}
+
+.about-documents__item {
+	min-height: 190px;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+	background: #EBF5FF;
+	border-radius: 20px;
+}
+
+.about-documents__item_big {
+	display: flex;
+	align-items: center;
+	width: 55%;
+}
+
+.about-documents__item_small {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 78px 0 100px;
+	width: 42%;
+}
+
+.about-documents__item-image {
+	padding: 20px 50px 20px 30px;
+}
+
+.about-documents__item-title {
+	padding-top: 10px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33.6px;
+}
+
+.about-documents__item-text {
+	padding: 15px 59px 10px 0;
+	font-size: 20px;
+	line-height: 28px;
+}
 
 /* ------------------------ Rates ------------------------ */
 
