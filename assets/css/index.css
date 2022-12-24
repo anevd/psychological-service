@@ -1,6 +1,6 @@
 * {
 	margin: 0;
-    padding: 0;
+	padding: 0;
 	box-sizing: border-box;
 	font-family: "Montserrat";
 	font-weight: 400;
@@ -9,8 +9,14 @@
 	border: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 }
 .container {
 	max-width: 1180px;
@@ -773,13 +779,65 @@ h1, h2, h3, h4, h5, h6, p {
 	left: 9%;
 }
 
+.home-questions {
+	padding: 120px 0 114px 0;
+}
+
+.home-questions__wrapper {
+	margin-top: 60px;
+}
+
+.home-questions__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 100px;
+	margin-top: 30px;
+	background-color: #ebf5ff;
+	border-radius: 25px;
+}
+
+.home-questions__item:nth-child(1) {
+	margin-top: 0;
+}
+
+.home-questions__text {
+	width: 70%;
+}
+
+.home-questions__ask {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #4d4d52;
+}
+
+.home-questions__answer {
+	display: none;
+	margin-top: 15px;
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 0.01em;
+	color: #4d4d52;
+}
+
+.home-questions__plus {
+	cursor: pointer;
+}
+
+.home-questions__minus {
+	display: none;
+	cursor: pointer;
+}
+
 /* ------------------------ About ------------------------ */
 
 /*section № 1, about-together*/
 .about-together {
 	position: relative;
 	padding: 80px 0 100px 0;
-	background: #F9FCFF;
+	background: #f9fcff;
 }
 
 .about-together__wrapper {
@@ -793,7 +851,7 @@ h1, h2, h3, h4, h5, h6, p {
 	font-size: 44px;
 	line-height: 66px;
 	letter-spacing: 0.02em;
-	color: #7872B9;
+	color: #7872b9;
 }
 
 .about-together__title-line {
@@ -816,10 +874,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .about-values__item {
 	position: relative;
-	width: calc(100%/3);
+	width: calc(100% / 3);
 	height: 316px;
 	text-align: center;
-	background: #EBF5FF;
+	background: #ebf5ff;
 	border-radius: 20px;
 }
 
@@ -839,7 +897,7 @@ h1, h2, h3, h4, h5, h6, p {
 	font-size: 24px;
 	line-height: 36px;
 	letter-spacing: 0.02em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 
 .about-values__item-text {
@@ -847,23 +905,23 @@ h1, h2, h3, h4, h5, h6, p {
 	font-size: 18px;
 	line-height: 25.2px;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 
 /*section № 3, about-experts*/
 .about-experts {
 	position: relative;
 	padding: 80px 0 80px 0;
-	background: #F9FCFF;
+	background: #f9fcff;
 }
 
 .about-experts__subtitle {
 	margin-bottom: 10px;
 	font-weight: 600;
 	font-size: 24px;
-	line-height: 33.6px;	
+	line-height: 33.6px;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 
 .about-experts__title-line {
@@ -878,7 +936,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .about-experts__item {
 	text-align: center;
-	color: #4D4D52;
+	color: #4d4d52;
 	letter-spacing: 0.01em;
 }
 
@@ -918,8 +976,8 @@ h1, h2, h3, h4, h5, h6, p {
 .about-documents__item {
 	min-height: 190px;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
-	background: #EBF5FF;
+	color: #4d4d52;
+	background: #ebf5ff;
 	border-radius: 20px;
 }
 
@@ -980,55 +1038,58 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rates-choice__subtitle {
-	margin-bottom:66px;
+	margin-bottom: 66px;
 	font-weight: 500;
-    font-size: 24px;
-	line-height:34px;
+	font-size: 24px;
+	line-height: 34px;
 	letter-spacing: 0.01em;
-    color: #4D4D52;
+	color: #4d4d52;
 }
 
 .rates-price__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top:70px;
+	margin-top: 70px;
 }
 
 .rates-price__content {
-	display:flex;
-	flex-direction:column;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-	width:23%;
-	height:384px;
+	width: 23%;
+	height: 384px;
 	margin-top: 40px;
 	border-radius: 15px;
-	background-color: #F9FCFF;
+	background-color: #f9fcff;
 }
 
-.rates-price__content:nth-child(1), .rates-price__content:nth-child(2), .rates-price__content:nth-child(3), .rates-price__content:nth-child(4) {
+.rates-price__content:nth-child(1),
+.rates-price__content:nth-child(2),
+.rates-price__content:nth-child(3),
+.rates-price__content:nth-child(4) {
 	margin-top: 0;
 }
 
 .rates-price__row1 {
 	height: 57px;
-	width:100%;
+	width: 100%;
 	border-radius: 15px 15px 0 0;
-	padding-top:20px;
+	padding-top: 20px;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 25px;
 	text-align: center;
 	letter-spacing: 0.02em;
-	background-color: #EBF5FF;
+	background-color: #ebf5ff;
 }
 
 .rates-price__row2 {
-	margin-top:20px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: center;
 	letter-spacing: 0.01em;
-	color: #7872B9;
+	color: #7872b9;
 }
 
 #price {
@@ -1038,53 +1099,53 @@ h1, h2, h3, h4, h5, h6, p {
 .rates-price__title {
 	margin-bottom: 0;
 	font-weight: 700;
-    font-size: 24px;
-    line-height:34px;
+	font-size: 24px;
+	line-height: 34px;
 }
 
 .rates-price__subtitle {
 	margin-top: 0;
 	font-weight: 500;
-    font-size: 20px;
-    line-height:28px;
+	font-size: 20px;
+	line-height: 28px;
 }
 
 .rates-price__btn {
 	align-self: center;
 	height: 70px;
-	width:80%;
+	width: 80%;
 	color: #ffffff;
-	border-color:#7872B9;
-	background: #7872B9;
+	border-color: #7872b9;
+	background: #7872b9;
 	border-radius: 10px;
 	font-weight: 600;
 	font-size: 18px;
-	line-height:25px;
+	line-height: 25px;
 	text-align: center;
 	letter-spacing: 0.02em;
 }
 
 .rates-price__row4 {
 	align-self: center;
-	height:60px;
-	width:80%;
-	margin-top:20px;
-	padding-top:15px;
+	height: 60px;
+	width: 80%;
+	margin-top: 20px;
+	padding-top: 15px;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 25px;
 	text-align: center;
 	letter-spacing: 0.02em;
-	color: #4D4D52;
-	background: #F1E6F7;
+	color: #4d4d52;
+	background: #f1e6f7;
 	border-radius: 8px;
 }
 
 .rates-price__none {
-	height:60px;
-	width:80%;
-	margin-top:20px;
-	background: #F9FCFF;
+	height: 60px;
+	width: 80%;
+	margin-top: 20px;
+	background: #f9fcff;
 }
 
 .rates-price__row5 {
@@ -1095,7 +1156,7 @@ h1, h2, h3, h4, h5, h6, p {
 	line-height: 25px;
 	text-align: center;
 	letter-spacing: 0.01em;
-	color: #7872B9;
+	color: #7872b9;
 }
 
 .ratest-form {
@@ -1107,13 +1168,13 @@ h1, h2, h3, h4, h5, h6, p {
 .ratest-promocode__wrapper {
 	display: flex;
 	flex-direction: column;
-	align-items:center;
+	align-items: center;
 }
 
 .ratest-form__promocode {
 	height: 60px;
 	width: 380px;
-	border: 2px solid #7872B9;
+	border: 2px solid #7872b9;
 	border-radius: 15px;
 	text-align: center;
 	font-weight: 500;
