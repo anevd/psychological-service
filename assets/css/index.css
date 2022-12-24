@@ -840,12 +840,12 @@ p {
 
 /*section № 1, about-together*/
 .about-together {
-	position: relative;
 	padding: 80px 0 100px 0;
 	background: #f9fcff;
 }
 
 .about-together__wrapper {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 }
@@ -861,8 +861,8 @@ p {
 
 .about-together__title-line {
 	position: absolute;
-	bottom: 198px;
-	left: 7.2%;
+	bottom: 28%;
+	left: -2%;
 }
 
 /*section № 2, about-values*/
@@ -915,9 +915,12 @@ p {
 
 /*section № 3, about-experts*/
 .about-experts {
-	position: relative;
 	padding: 80px 0 80px 0;
 	background: #f9fcff;
+}
+
+.about-experts__heading-wrapper {
+	position: relative;
 }
 
 .about-experts__subtitle {
@@ -931,6 +934,7 @@ p {
 
 .about-experts__title-line {
 	position: absolute;
+	left: 43%;
 }
 
 .about-experts__wrapper {
@@ -996,7 +1000,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 0 78px 0 100px;
+	padding: 0 55px 0 100px;
 	width: 42%;
 }
 
@@ -1015,6 +1019,22 @@ p {
 	padding: 15px 59px 10px 0;
 	font-size: 20px;
 	line-height: 28px;
+}
+
+/*section № 5, about-history*/
+.about-history {
+	padding: 80px 0 101px 0;
+	background: #F9FCFF;
+}
+
+.about-history__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.about-history__text {
+	
 }
 
 /* ------------------------ Rates ------------------------ */
