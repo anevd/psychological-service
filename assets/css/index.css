@@ -956,6 +956,174 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ------------------------ Rates ------------------------ */
 
+.rates-choice {
+	position: relative;
+	background-color: #f9fcff;
+	padding: 75px 0 81px 0;
+}
+
+.rates-choice__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rates-choice__content {
+	width: 51%;
+}
+
+.rates-choice__title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 52px;
+	letter-spacing: 0.02em;
+	color: #7872b9;
+}
+
+.rates-choice__subtitle {
+	margin-bottom:66px;
+	font-weight: 500;
+    font-size: 24px;
+	line-height:34px;
+	letter-spacing: 0.01em;
+    color: #4D4D52;
+}
+
+.rates-price__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top:70px;
+}
+
+.rates-price__content {
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	width:23%;
+	height:384px;
+	margin-top: 40px;
+	border-radius: 15px;
+	background-color: #F9FCFF;
+}
+
+.rates-price__content:nth-child(1), .rates-price__content:nth-child(2), .rates-price__content:nth-child(3), .rates-price__content:nth-child(4) {
+	margin-top: 0;
+}
+
+.rates-price__row1 {
+	height: 57px;
+	width:100%;
+	border-radius: 15px 15px 0 0;
+	padding-top:20px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	background-color: #EBF5FF;
+}
+
+.rates-price__row2 {
+	margin-top:20px;
+	margin-bottom: 20px;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #7872B9;
+}
+
+#price {
+	margin-top: 110px;
+}
+
+.rates-price__title {
+	margin-bottom: 0;
+	font-weight: 700;
+    font-size: 24px;
+    line-height:34px;
+}
+
+.rates-price__subtitle {
+	margin-top: 0;
+	font-weight: 500;
+    font-size: 20px;
+    line-height:28px;
+}
+
+.rates-price__btn {
+	align-self: center;
+	height: 70px;
+	width:80%;
+	color: #ffffff;
+	border-color:#7872B9;
+	background: #7872B9;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height:25px;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+
+.rates-price__row4 {
+	align-self: center;
+	height:60px;
+	width:80%;
+	margin-top:20px;
+	padding-top:15px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: #4D4D52;
+	background: #F1E6F7;
+	border-radius: 8px;
+}
+
+.rates-price__none {
+	height:60px;
+	width:80%;
+	margin-top:20px;
+	background: #F9FCFF;
+}
+
+.rates-price__row5 {
+	height: 25px;
+	margin-top: 25px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #7872B9;
+}
+
+.ratest-form {
+	width: 100%;
+	height: 370px;
+	margin-top: 50px;
+}
+
+.ratest-promocode__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+.ratest-form__promocode {
+	height: 60px;
+	width: 380px;
+	border: 2px solid #7872B9;
+	border-radius: 15px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	color: rgba(120, 114, 185, 0.6);
+	margin-bottom: 35px;
+}
+
 /* ------------------------ Psychologists ------------------------ */
 
 /* ------------------------ Contacts ------------------------ */ ;
