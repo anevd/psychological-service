@@ -968,7 +968,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rates-choice__content {
-	width: 51%;
+	width: 100%;
 }
 
 .rates-choice__title {
@@ -980,6 +980,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rates-choice__subtitle {
+	margin-top: 20px;
 	margin-bottom:66px;
 	font-weight: 500;
     font-size: 24px;
@@ -1043,7 +1044,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rates-price__subtitle {
-	margin-top: 0;
+	padding-top: 20px;
 	font-weight: 500;
     font-size: 20px;
     line-height:28px;
@@ -1062,6 +1063,12 @@ h1, h2, h3, h4, h5, h6, p {
 	line-height:25px;
 	text-align: center;
 	letter-spacing: 0.02em;
+	cursor: pointer;
+}
+
+.rates-price__btn:hover {
+	background-color: #4c4883;
+	transition: 0.5s all;
 }
 
 .rates-price__row4 {
@@ -1080,6 +1087,11 @@ h1, h2, h3, h4, h5, h6, p {
 	border-radius: 8px;
 }
 
+.rates-price__row4:hover {
+	cursor: pointer;
+	background-color: rgba(241,230,247,0.8);
+}
+
 .rates-price__none {
 	height:60px;
 	width:80%;
@@ -1088,7 +1100,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rates-price__row5 {
-	height: 25px;
+	height: 30px;
 	margin-top: 25px;
 	font-weight: 500;
 	font-size: 18px;
