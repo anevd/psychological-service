@@ -73,7 +73,7 @@ p {
 }
 
 .header-psyghologyst {
-	background-color: #F5F5F5;
+	background-color: #f5f5f5;
 	padding-top: 70px;
 }
 
@@ -1024,7 +1024,7 @@ p {
 /*section № 5, about-history*/
 .about-history {
 	padding: 80px 0 101px 0;
-	background: #F9FCFF;
+	background: #f9fcff;
 }
 
 .about-history__wrapper {
@@ -1034,7 +1034,6 @@ p {
 }
 
 .about-history__text {
-	
 }
 
 /* ------------------------ Rates ------------------------ */
@@ -1213,7 +1212,7 @@ p {
 /* ------------------------ Psychologists ------------------------ */
 
 .psychologyst-practiceonline {
-	background-color: #F5F5F5;
+	background-color: #f5f5f5;
 	height: 87vh;
 }
 .psychologyst-practiceonline-wrapper {
@@ -1230,14 +1229,14 @@ p {
 	font-size: 2.5em;
 	line-height: 130%;
 	letter-spacing: 0.02em;
-	color: #7872B9;
+	color: #7872b9;
 }
 .psychologyst-practiceonline-content__text {
 	padding: 4% 10% 7% 0;
 	font-weight: 500;
 	font-size: 1.5em;
 	line-height: 140%;
-	color: #4D4D52;
+	color: #4d4d52;
 	letter-spacing: 0.01em;
 }
 .psychologyst-practiceonline-content__button {
@@ -1269,11 +1268,11 @@ p {
 }
 .psychologyst-practiceonline__imgitem {
 	max-width: 100%;
-    max-height: 100%;
+	max-height: 100%;
 	object-fit: cover;
 }
 .psychologyst-benefits {
-	background-color: #F9FCFF;
+	background-color: #f9fcff;
 }
 .psychologyst-benefits-wrapper {
 	display: grid;
@@ -1309,15 +1308,15 @@ p {
 	font-size: 2.5em;
 	line-height: 130%;
 	letter-spacing: 0.02em;
-	color: #7872B9;
+	color: #7872b9;
 	text-align: center;
 }
 .psychologyst-benefits-section {
 	margin: 8% 0 16% 0;
 	padding: 17% 8% 6.5% 8%;
-	background: #FFFFFF;
+	background: #ffffff;
 	border-radius: 20px;
-	box-shadow: 10px 15px 0px 0px #CDE1FF;
+	box-shadow: 10px 15px 0px 0px #cde1ff;
 	position: relative;
 }
 .psychologyst-benefits-section__icon {
@@ -1332,24 +1331,24 @@ p {
 	font-size: 24px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 .psychologyst-benefits-section__text {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 .psychologyst-benefits-section__violettext {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
-	color: #7872B9;
+	color: #7872b9;
 }
 .psychologyst-waitfromyou {
-	background-color: #F5F5F5;
+	background-color: #f5f5f5;
 }
 .psychologyst-waitfromyou-wrapper {
 	padding: 5% 0 10% 0;
@@ -1387,21 +1386,22 @@ p {
 	font-size: 2.5em;
 	line-height: 130%;
 	letter-spacing: 0.02em;
-	color: #7872B9;
+	color: #7872b9;
 	text-align: center;
 }
 .psychologyst-waitfromyou-sectionwithicon {
 	display: grid;
 	grid-template-columns: 0.2fr 0.8fr;
 	grid-template-rows: 0.4fr 0.6fr;
-	grid-template-areas: "psy-wait-icon psy-wait-subtitle"
-	"psy-wait-icon psy-wait-text";
+	grid-template-areas:
+		"psy-wait-icon psy-wait-subtitle"
+		"psy-wait-icon psy-wait-text";
 	padding: 2% 5% 2% 5%;
-	background: #EBF5FF;
+	background: #ebf5ff;
 	border-radius: 20px;
 }
 .psychologyst-waitfromyou-sectionwithicon__icon {
-grid-area: psy-wait-icon;
+	grid-area: psy-wait-icon;
 }
 .psychologyst-benefits-sectionwithicon__subtitle {
 	grid-area: psy-wait-subtitle;
@@ -1412,7 +1412,7 @@ grid-area: psy-wait-icon;
 	font-size: 24px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 .psychologyst-benefits-sectionwithicon__text {
 	grid-area: psy-wait-text;
@@ -1420,11 +1420,11 @@ grid-area: psy-wait-icon;
 	font-size: 20px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 .psychologyst-waitfromyou-section {
 	padding: 5% 15% 5% 15%;
-	background: #EBF5FF;
+	background: #ebf5ff;
 	border-radius: 20px;
 }
 .psychologyst-benefits-section__subtitle {
@@ -1434,22 +1434,22 @@ grid-area: psy-wait-icon;
 	font-size: 24px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 .psychologyst-benefits-section__text {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 .psychologyst-4stepsforjob {
-	background-color: #F9FCFF;;
+	background-color: #f9fcff;
 }
 .psychologyst-4stepsforjob-wrapper {
 	display: grid;
 	grid-template-columns: 0.7fr 0.3fr 0.3fr 0.7fr;
-	grid-template-rows: repeat(5,1fr) 0.7fr;
+	grid-template-rows: repeat(5, 1fr) 0.7fr;
 }
 .psychologyst-4stepsforjob-title {
 	margin: 0;
@@ -1460,7 +1460,7 @@ grid-area: psy-wait-icon;
 	font-size: 2.5em;
 	line-height: 130%;
 	letter-spacing: 0.02em;
-	color: #7872B9;
+	color: #7872b9;
 	text-align: center;
 }
 #grid-area3_1 {
@@ -1529,7 +1529,7 @@ grid-area: psy-wait-icon;
 	font-size: 24px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 .psychologyst-4stepsforjob-section__text {
 	position: relative;
@@ -1539,7 +1539,7 @@ grid-area: psy-wait-icon;
 	font-size: 18px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
-	color: #4D4D52;
+	color: #4d4d52;
 }
 .psychologyst-4stepsforjob-iconrightarrow1 {
 	position: absolute;
