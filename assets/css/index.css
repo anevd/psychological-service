@@ -818,13 +818,27 @@ p {
 	color: #4d4d52;
 }
 
+.questions__sign {
+	align-self: flex-start;
+}
+
 .questions__answer {
-	display: none;
-	margin-top: 15px;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+	height: 0;
 	font-size: 18px;
 	line-height: 25px;
 	letter-spacing: 0.01em;
 	color: #4d4d52;
+}
+
+.questions__answer_visible {
+	opacity: 1;
+	visibility: visible;
+	margin-top: 15px;
+	height: 100%;
+	transition: opacity 0.5s ease-in;
 }
 
 .questions__plus {
