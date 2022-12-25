@@ -80,6 +80,7 @@ p {
 .header__wrapper {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .header__nav {
@@ -124,6 +125,10 @@ p {
 	flex-direction: column;
 	justify-content: space-between;
 	width: 15.3%;
+}
+
+.footer__logo-img {
+	width: 100%;
 }
 
 .footer__socials {
@@ -177,7 +182,8 @@ p {
 .footer__menu {
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
-	gap: 47px;
+	height: 100%;
+	justify-content: space-between;
 	list-style: none;
 }
 
@@ -228,6 +234,7 @@ p {
 .home-find__wrapper {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .home-find__content {
@@ -334,7 +341,6 @@ p {
 }
 
 .home-problems {
-	position: relative;
 	background-color: #f9fcff;
 	padding: 80px 0 99px 0;
 }
@@ -350,6 +356,7 @@ p {
 }
 
 .home-problems__descr {
+	position: relative;
 	width: 49%;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -362,8 +369,8 @@ p {
 
 .home-problems__icon-arrow {
 	position: absolute;
-	top: 35%;
-	right: 20%;
+	top: 50%;
+	right: -25%;
 	transform: rotate(27.19deg);
 }
 
@@ -462,6 +469,7 @@ p {
 .home-quality__education,
 .home-quality__therapy {
 	display: flex;
+	align-items: center;
 	padding: 20px 30px;
 }
 
@@ -1578,9 +1586,21 @@ p {
 	.container {
 		max-width: 90%;
 	}
-	/* ------------------------ Header ------------------------ */
 
 	/* ------------------------ Footer ------------------------ */
+
+	.footer__connection {
+		width: 20%;
+		text-align: center;
+	}
+
+	.footer__policy {
+		width: 25%;
+	}
+
+	.footer__policy-item {
+		font-size: 1.3vw;
+	}
 
 	/* ------------------------ Home ------------------------ */
 
@@ -1611,6 +1631,11 @@ p {
 		padding-top: 8px;
 	}
 
+	.home-quality__item-text_therapy,
+	.home-quality__item-text_education {
+		padding-left: 30px;
+	}
+
 	.home-steps__picture-session {
 		padding: 2% 3% 2% 3%;
 	}
@@ -1630,10 +1655,113 @@ p {
 
 @media screen and (max-width: 1024px) {
 	/* ------------------------ Header ------------------------ */
+	.header {
+		padding-top: 50px;
+	}
 
 	/* ------------------------ Footer ------------------------ */
 
+	.footer {
+		padding: 50px 0;
+	}
+
 	/* ------------------------ Home ------------------------ */
+
+	.home-find {
+		padding: 60px 0;
+	}
+
+	.home-find__content {
+		width: 61%;
+	}
+
+	.home-find__title {
+		font-size: 4.5vw;
+		line-height: 135%;
+	}
+
+	.home-find__subtitle {
+		font-size: 3vw;
+		line-height: 135%;
+		margin-bottom: 10%;
+	}
+
+	.home-comfort {
+		padding: 60px 0;
+	}
+
+	.home-comfort__wrapper {
+		margin-top: 120px;
+	}
+
+	.home-comfort__item {
+		padding: 90px 3% 3% 3%;
+	}
+
+	.home-comfort__item-img {
+		width: 150px;
+		top: -100px;
+	}
+
+	.home-comfort__item-title {
+		font-size: 2.2vw;
+		line-height: 120%;
+	}
+
+	.home-comfort__item-descr,
+	.home-comfort__item:nth-child(2) .home-comfort__item-descr {
+		margin: 6% 0 0 0;
+		font-size: 1.5vw;
+		line-height: 150%;
+	}
+
+	.home-comfort__item:nth-child(3) .home-comfort__item-descr {
+		margin: 6% 3% 0 3%;
+	}
+
+	.home-problems {
+		padding: 40px 0 50px 0;
+	}
+
+	.home-problems__wrapper {
+		margin-top: 100px;
+	}
+
+	.home-quality {
+		padding: 60px 0;
+	}
+
+	.home-quality__wrapper {
+		margin-top: 40px;
+	}
+
+	.home-quality__item-img {
+		width: 100%;
+	}
+
+	.home-quality__item-title {
+		font-size: 2.3vw;
+	}
+
+	.home-quality__item-descr {
+		margin-top: 2%;
+		font-size: 1.8vw;
+		line-height: 150%;
+	}
+
+	.home-quality__item-text_education,
+	.home-quality__item-text_therapy {
+		padding-top: 0;
+		width: 100%;
+	}
+
+	.home-steps {
+		padding: 60px 0;
+	}
+
+	.home-questions {
+		padding: 60px 0;
+	}
 
 	/* ------------------------ About ------------------------ */
 
@@ -1647,9 +1775,113 @@ p {
 @media screen and (max-width: 960px) {
 	/* ------------------------ Header ------------------------ */
 
+	.header__nav {
+		width: 60%;
+	}
+
 	/* ------------------------ Footer ------------------------ */
 
+	.footer__wrapper {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.footer__contacts {
+		width: 20%;
+	}
+
+	.footer__socials {
+		margin-top: 25px;
+	}
+
+	.footer__connection {
+		width: 30%;
+		height: 125px;
+	}
+
+	.footer__nav {
+		width: 30%;
+	}
+
+	.footer__policy {
+		width: 100%;
+		margin-top: 40px;
+		align-items: center;
+		height: 70px;
+	}
+
+	.footer__policy-item {
+		font-size: 1.7vw;
+	}
+
 	/* ------------------------ Home ------------------------ */
+
+	.home-problems__descr {
+		width: 55%;
+		font-size: 2.3vw;
+	}
+
+	.home-problems__wrapper {
+		height: 91px;
+	}
+
+	.home-problems__item {
+		height: 40px;
+		padding: 5px 3%;
+	}
+
+	.home-quality__title {
+		width: 100%;
+	}
+
+	.home-quality__descr {
+		width: 80%;
+	}
+
+	.home-quality__work-experience,
+	.home-quality__learning {
+		padding: 20px 30px 30px 40px;
+	}
+
+	.home-steps__wrapper {
+		margin-top: 70px;
+	}
+
+	.home-steps__item {
+		margin: 0 auto;
+		width: 80%;
+		margin-top: 100px;
+	}
+
+	.home-steps__item:nth-last-child(1) {
+		flex-direction: column;
+		width: 60%;
+	}
+
+	.home-steps__item-content {
+		width: 100%;
+	}
+
+	.home-steps__picture {
+		display: none;
+	}
+
+	.home-steps__item-content {
+		margin-bottom: 30px;
+	}
+
+	.home-steps__item-descr_calendar {
+		padding-right: 0;
+	}
+
+	.questions__item {
+		padding: 30px 70px;
+	}
+
+	.questions__answer_visible {
+		font-size: 2vw;
+		line-height: 150%;
+	}
 
 	/* ------------------------ About ------------------------ */
 
