@@ -1029,13 +1029,126 @@ p {
 
 .about-history__wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	padding: 90px 100px 0 100px;
+	grid-template-columns: 371px 32px 538px 32px;
+	grid-template-rows: 114px repeat(2,auto);
+}
+
+.about-history__photo {
+	position: relative;
+	z-index: 1;
+	grid-row: 1/4;
+}
+
+.about-history__vector {
+	position: absolute;
+	z-index: -1;
+	top: 6%;
+	left: 4%;
+}
+
+.about-history__quotes-bottom {
+	align-self: flex-end;
 }
 
 .about-history__text {
-	
+	padding: 10px 34px 20px 34px;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
 }
+
+.about-history__name {
+	grid-column: 2/5;
+	align-self: flex-end;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33.6px;
+	text-align: right;
+	letter-spacing: 0.01em;
+	color: #7872B9;
+}
+
+.about-history__description {
+	grid-column: 2/5;
+	font-size: 16px;
+	line-height: 22.4px;
+	text-align: right;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.about-history__wrapper2 {
+	display: grid;
+	padding: 137px 100px 0 100px;
+	grid-template-columns: 32px 538px 32px 371px;
+	grid-template-rows: 142px repeat(2,auto);
+}
+
+.about-history__text2 {
+	padding: 10px 34px 20px 34px;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.about-history__name2 {
+	grid-column: 1/4;
+	align-self: flex-end;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33.6px;
+	text-align: right;
+	letter-spacing: 0.01em;
+	color: #7872B9;
+}
+
+.about-history__description2 {
+	grid-column: 1/4;
+	font-size: 16px;
+	line-height: 22.4px;
+	text-align: right;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.about-history__photo2 {
+	position: relative;
+	z-index: 1;
+	grid-row: 4/1;
+	grid-column: 4/5;
+	text-align: right;
+}
+
+.about-history__vector2 {
+	position: absolute;
+	z-index: -1;
+	top: 6%;
+	left: 39%;
+}
+
+/*section № 6, about-media*/
+.about-media {
+	padding: 120px 0 120px 0;
+}
+
+.about-media__wrapper {
+	display: flex;
+	padding-top: 95px;
+	justify-content: space-between;
+}
+
+.about-media__logo:hover {
+	filter: brightness(0.5);
+	transition: 1s;
+}
+
+/*.footer__socials-logo:hover {
+	background: #cdb9dc;
+	border: 1px solid #f9fcff;
+}*/
 
 /* ------------------------ Rates ------------------------ */
 
