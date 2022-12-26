@@ -1039,6 +1039,8 @@ p {
 
 /* ------------------------ Rates ------------------------ */
 
+/* rates-choice*/
+
 .rates-choice {
 	position: relative;
 	background-color: #f9fcff;
@@ -1071,6 +1073,8 @@ p {
 	letter-spacing: 0.01em;
 	color: #4d4d52;
 }
+
+/*rates-price*/
 
 .rates-price__wrapper {
 	display: flex;
@@ -1196,19 +1200,21 @@ p {
 	color: #7872b9;
 }
 
-.ratest-form {
+/*rates-form*/
+
+.rates-form {
 	width: 100%;
 	height: 370px;
 	margin-top: 50px;
 }
 
-.ratest-promocode__wrapper {
+.rates-promocode__wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.ratest-form__promocode {
+.rates-form__promocode {
 	height: 60px;
 	width: 380px;
 	border: 2px solid #7872b9;
@@ -1220,6 +1226,189 @@ p {
 	letter-spacing: 0.02em;
 	color: rgba(120, 114, 185, 0.6);
 	margin-bottom: 35px;
+}
+
+/*rates-application*/
+
+.rates-application {
+	position: relative;
+	background-color: #f9fcff;
+	height: 788px;
+	width: 100%;
+}
+
+.rates-application__wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rates-application__content {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 120px;
+}
+
+.rates-application__content_title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: #7872B9;
+}
+
+.rates-application__content_subtitle {
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.rates-application__content-screenshot {
+	margin-left: 107px;
+	margin-top: 120px;
+}
+
+.rates-application__img {
+	height:59%;
+	object-fit: contain;
+	position: absolute;
+}
+
+.rates-application__content-runct {
+	display:flex;
+	flex-direction: column;
+}
+
+.rates-application__content-runct_block {
+	display: flex;
+	flex-direction: row;
+}
+
+.rates-application__content-runct_text {
+	margin-left: 30px;
+	margin-top: 35px;
+	font-weight: 400;
+    font-size: 18px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.rates-application__content-runct_svg {
+	margin-top:40px;
+}
+
+.rates-application__btn {
+	width: 380px;
+	height: 70px;
+	background: #7872b9;
+	border-radius: 15px;
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: #ffffff;
+	box-shadow: 9px 13px 0px -1px rgb(205 225 255);
+	cursor: pointer;
+	margin-top: 60px;
+}
+
+.rates-application__btn:hover {
+	box-shadow: 6px 7px 0px -2px rgb(205 225 255);
+	transition: 0.5s all;
+}
+
+.rates-application__btn:focus {
+	background: #4c4883;
+	box-shadow: none;
+}
+
+/*rates-care*/
+
+.rates-care {
+	background-color: #FFF;
+	width: 100%;
+	height: 700px;
+}
+
+.rates-care__wrapper {
+	display: flex;
+	flex-direction: row;
+
+	background-color: #F9FCFF;
+	margin-top: 155px;
+	margin-bottom: 100px;
+}
+
+.rates-care__block-content {
+	margin: 80px;
+}
+
+.rates-care__subtitle_1 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+	margin-bottom: 10px;
+}
+
+.rates-care__title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: #7872B9;
+	margin-bottom: 20px;
+}
+
+.rates-care__subtitle_2 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.rates-care__block-img {
+	position: absolute;
+	margin-left: 702px;
+	margin-bottom: 85px;
+}
+
+/*rates-steps*/
+
+.rates-steps {
+	width: 100vw;
+	height:470px;
+}
+
+.rates-steps__title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: #7872B9;
+	margin-left:30%;
+}
+
+.rates-steps__runct {
+	display: flex;
+	flex-direction: row;
+}
+
+.rates-steps__nmb-text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 140%;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
 }
 
 /* ------------------------ Psychologists ------------------------ */
