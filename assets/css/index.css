@@ -73,7 +73,7 @@ p {
 }
 
 .header-psyghologyst {
-	background-color: #f5f5f5;
+	background-color: #ffffff;
 	padding-top: 70px;
 }
 
@@ -1072,7 +1072,7 @@ p {
 }
 
 .rates-choice__content {
-	width: 51%;
+	width: 100%;
 }
 
 .rates-choice__title {
@@ -1084,6 +1084,7 @@ p {
 }
 
 .rates-choice__subtitle {
+	margin-top: 20px;
 	margin-bottom: 66px;
 	font-weight: 500;
 	font-size: 24px;
@@ -1150,7 +1151,7 @@ p {
 }
 
 .rates-price__subtitle {
-	margin-top: 0;
+	padding-top: 20px;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 28px;
@@ -1169,6 +1170,12 @@ p {
 	line-height: 25px;
 	text-align: center;
 	letter-spacing: 0.02em;
+	cursor: pointer;
+}
+
+.rates-price__btn:hover {
+	background-color: #4c4883;
+	transition: 0.5s all;
 }
 
 .rates-price__row4 {
@@ -1187,6 +1194,11 @@ p {
 	border-radius: 8px;
 }
 
+.rates-price__row4:hover {
+	cursor: pointer;
+	background-color: rgba(241, 230, 247, 0.8);
+}
+
 .rates-price__none {
 	height: 60px;
 	width: 80%;
@@ -1195,7 +1207,7 @@ p {
 }
 
 .rates-price__row5 {
-	height: 25px;
+	height: 30px;
 	margin-top: 25px;
 	font-weight: 500;
 	font-size: 18px;
@@ -1234,7 +1246,7 @@ p {
 /* ------------------------ Psychologists ------------------------ */
 
 .psychologyst-practiceonline {
-	background-color: #f5f5f5;
+	background-color: #ffffff;
 	height: 87vh;
 }
 .psychologyst-practiceonline-wrapper {
@@ -1370,7 +1382,7 @@ p {
 	color: #7872b9;
 }
 .psychologyst-waitfromyou {
-	background-color: #f5f5f5;
+	background-color: #ffffff;
 }
 .psychologyst-waitfromyou-wrapper {
 	padding: 5% 0 10% 0;
