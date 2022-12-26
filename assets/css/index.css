@@ -68,6 +68,7 @@ p {
 /* ------------------------ Header ------------------------ */
 
 .header {
+	position: relative;
 	background-color: #f9fcff;
 	padding-top: 70px;
 }
@@ -106,6 +107,10 @@ p {
 .header__link:hover {
 	color: #7872b9;
 	transition: 0.5s all;
+}
+
+.hamburger {
+	display: none;
 }
 
 /* ------------------------ Footer ------------------------ */
@@ -1905,11 +1910,247 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+	.title {
+		font-size: 27px;
+		line-height: 140%;
+	}
+
 	/* ------------------------ Header ------------------------ */
+
+	.header__menu {
+		position: absolute;
+		align-items: center;
+		left: -100%;
+		top: 0;
+		z-index: 2;
+		padding: 30px 40px;
+		flex-direction: column;
+		height: 80vh;
+		background-color: #ebf5ff;
+		width: 70%;
+		opacity: 0.9;
+		transition: 0.6s all;
+	}
+
+	.header__menu_active {
+		left: 0;
+	}
+
+	.header__link {
+		font-size: 20px;
+	}
+
+	.hamburger {
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		height: 22px;
+		justify-content: space-between;
+		right: 40px;
+		top: 72px;
+		transform: translateY(-50%);
+	}
+
+	.hamburger__line {
+		transition: 0.5s all;
+	}
+
+	.hamburger_active .hamburger__line:nth-child(1) {
+		transform: rotate(-45deg) translate(-3px, 10px);
+	}
+
+	.hamburger_active .hamburger__line:nth-child(2) {
+		display: none;
+	}
+
+	.hamburger_active .hamburger__line:nth-child(3) {
+		transform: rotate(45deg) translate(-3px, -10px);
+	}
 
 	/* ------------------------ Footer ------------------------ */
 
+	.footer__contacts {
+		width: 35%;
+	}
+
+	.footer__connection {
+		width: 40%;
+	}
+
+	.footer__nav {
+		width: 100%;
+		margin-top: 50px;
+		height: 100px;
+	}
+
+	.footer__menu {
+		justify-items: center;
+	}
+
+	.footer__policy {
+		margin-top: 20px;
+		height: 80px;
+	}
+
+	.footer__policy-item {
+		font-size: 14px;
+	}
+
 	/* ------------------------ Home ------------------------ */
+
+	.home-find__img {
+		display: none;
+	}
+
+	.home-find__content {
+		width: 100%;
+	}
+
+	.home-find__title {
+		font-size: 6.5vw;
+	}
+
+	.home-find__icon-message {
+		display: none;
+	}
+
+	.home-find__subtitle {
+		font-size: 3.2vw;
+		margin-bottom: 4%;
+	}
+
+	.home-find__descr {
+		font-size: 3.2vw;
+		margin-top: 30px;
+	}
+
+	.home-comfort__wrapper {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 90px;
+	}
+
+	.home-comfort__item {
+		width: 80%;
+		min-height: max-content;
+		margin-top: 80px;
+		padding-bottom: 6%;
+	}
+
+	.home-comfort__item:nth-child(1) {
+		margin-top: 0;
+	}
+
+	.home-comfort__item-title {
+		font-size: 4.2vw;
+	}
+
+	.home-comfort__item-descr,
+	.home-comfort__item:nth-child(2) .home-comfort__item-descr {
+		margin: 4% 0 0 0;
+		font-size: 2.5vw;
+	}
+
+	.home-problems__descr {
+		width: 75%;
+		font-size: 3vw;
+		line-height: 150%;
+	}
+
+	.home-problems__icon-arrow {
+		display: none;
+	}
+
+	.home-problems__wrapper {
+		display: none;
+	}
+
+	.home-quality__descr {
+		width: 90%;
+		font-size: 17px;
+		line-height: 150%;
+	}
+
+	.home-quality__item-img {
+		display: none;
+	}
+
+	.home-quality__education,
+	.home-quality__work-experience,
+	.home-quality__learning,
+	.home-quality__therapy {
+		padding: 30px 20px;
+	}
+
+	.home-quality__item-text {
+		padding: 0;
+	}
+
+	.home-quality__item-title {
+		font-size: 3.1vw;
+	}
+
+	.home-quality__item-descr {
+		margin-top: 8px;
+		font-size: 2.3vw;
+		width: 100%;
+	}
+
+	.home-steps__item {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	.home-steps__item-content {
+		flex-direction: column;
+	}
+
+	.home-steps__item-spot {
+		width: 100px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.home-steps__item-text {
+		text-align: center;
+		margin-top: 43px;
+	}
+
+	.home-steps__item-descr {
+		width: 100%;
+	}
+
+	.home-steps__item-descr_calendar {
+		text-align: center;
+	}
+
+	.questions__item {
+		padding: 20px;
+	}
+
+	.questions__ask {
+		font-size: 16px;
+		line-height: 140%;
+	}
+
+	.questions__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.questions__wrapper .button {
+		margin-top: 40px;
+	}
+
+	.questions__item:nth-child(n + 3) {
+		display: none;
+	}
+
+	.questions__answer_visible {
+		font-size: 13px;
+	}
 
 	/* ------------------------ About ------------------------ */
 
@@ -1936,7 +2177,7 @@ p {
 	/* ------------------------ Contacts ------------------------ */
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 360px) {
 	/* ------------------------ Header ------------------------ */
 
 	/* ------------------------ Footer ------------------------ */
