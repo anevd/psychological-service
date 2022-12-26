@@ -861,19 +861,22 @@ p {
 /* ------------------------ About ------------------------ */
 
 /*section № 1, about-together*/
-.about-together {
+.about- {
 	padding: 80px 0 100px 0;
 	background-color: #f9fcff;
 }
 
 .about-together__wrapper {
-	position: relative;
 	display: flex;
 	justify-content: space-between;
 }
 
-.about-together__title {
+.about-together__content {
+	position: relative;
 	align-self: center;
+}
+
+.about-together__title {
 	font-weight: 800;
 	font-size: 44px;
 	line-height: 66px;
@@ -883,8 +886,12 @@ p {
 
 .about-together__title-line {
 	position: absolute;
-	bottom: 28%;
-	left: -2%;
+	transform: translate(-12%, -85%);
+}
+
+.about-together__image {
+	width: 100%;
+	height: 100%;
 }
 
 /*section № 2, about-values*/
@@ -895,13 +902,13 @@ p {
 .about-values__wrapper {
 	display: flex;
 	justify-content: space-between;
-	column-gap: 20px;
-	padding-top: 190px;
+	margin-top: 190px;
 }
 
 .about-values__item {
 	position: relative;
-	width: calc(100% / 3);
+	padding: 130px 30px 40px 30px;
+	width: 32.5%;
 	height: 316px;
 	text-align: center;
 	background-color: #ebf5ff;
@@ -914,12 +921,10 @@ p {
 
 .about-values__item-image {
 	position: absolute;
-	top: -32%;
-	left: 25%;
+	transform: translate(-50%, -115%);
 }
 
 .about-values__item-title {
-	padding-top: 130px;
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 36px;
@@ -928,7 +933,6 @@ p {
 }
 
 .about-values__item-text {
-	padding: 15px 30px 35px 30px;
 	font-size: 18px;
 	line-height: 25.2px;
 	letter-spacing: 0.01em;
@@ -956,7 +960,7 @@ p {
 
 .about-experts__title-line {
 	position: absolute;
-	left: 43%;
+	transform: translate(155%, 0);
 }
 
 .about-experts__wrapper {
@@ -1052,7 +1056,6 @@ p {
 .about-history__wrapper {
 	display: grid;
 	padding: 90px 100px 0 100px;
-	/*grid-template-columns: 371px 32px 538px 32px;*/
 	grid-template-columns: 1fr 32px 2fr 32px;
 	grid-template-rows: repeat(3, auto);
 }
@@ -1066,8 +1069,7 @@ p {
 .about-history__vector {
 	position: absolute;
 	z-index: -1;
-	top: 6%;
-	left: 4%;
+	transform: translate(-94%, 7%);
 }
 
 .about-history__quotes-bottom {
@@ -1105,7 +1107,6 @@ p {
 .about-history__wrapper2 {
 	display: grid;
 	padding: 137px 100px 0 100px;
-	/*grid-template-columns: 32px 538px 32px 371px;*/
 	grid-template-columns: 32px 2fr 32px 1fr;
 	grid-template-rows: repeat(3, auto);
 }
@@ -1149,8 +1150,7 @@ p {
 .about-history__vector2 {
 	position: absolute;
 	z-index: -1;
-	top: 6%;
-	left: 39%;
+	transform: translate(-94%, 7%);
 }
 
 /*section № 6, about-media*/
@@ -1767,7 +1767,56 @@ p {
 		width: 50%;
 	}
 
-	/* ------------------------ About ------------------------ */
+/* ------------------------ About ------------------------ */
+
+/*section № 1, about-together*/
+.about-together__title {
+	font-size: 40px;
+}
+
+.about-together__title-line {
+	transform: translate(-20%, -85%);
+}
+
+/*section № 2, about-values*/
+.about-values__item {
+	height: 368px;
+}
+
+.about-values__item:nth-child(2) {
+	height: 419px;
+}
+
+/*section № 4, about-documents*/
+.about-documents__subtitle {
+	width: 90%;
+}
+
+.about-documents__wrapper {
+	gap: 20px;
+}
+
+.about-documents__item_small {
+	padding: 0 40px 0 100px;
+}
+
+/*section № 5, about-history*/
+.about-history__wrapper {
+	grid-template-columns: 1fr 32px 1fr 32px;
+}
+
+.about-history__vector {
+	transform: translate(-94%, 7%);
+}
+
+.about-history__wrapper2 {
+	grid-template-columns: 32px 1fr 32px 1fr;
+}
+
+.about-history__vector2 {
+	transform: translate(-94%, 7%);
+}
+
 
 	/* ------------------------ Rates ------------------------ */
 
