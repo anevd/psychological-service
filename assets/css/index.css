@@ -841,7 +841,7 @@ p {
 /*section № 1, about-together*/
 .about-together {
 	padding: 80px 0 100px 0;
-	background: #f9fcff;
+	background-color: #f9fcff;
 }
 
 .about-together__wrapper {
@@ -882,7 +882,7 @@ p {
 	width: calc(100% / 3);
 	height: 316px;
 	text-align: center;
-	background: #ebf5ff;
+	background-color: #ebf5ff;
 	border-radius: 20px;
 }
 
@@ -916,7 +916,7 @@ p {
 /*section № 3, about-experts*/
 .about-experts {
 	padding: 80px 0 80px 0;
-	background: #f9fcff;
+	background-color: #f9fcff;
 }
 
 .about-experts__heading-wrapper {
@@ -986,7 +986,7 @@ p {
 	min-height: 190px;
 	letter-spacing: 0.01em;
 	color: #4d4d52;
-	background: #ebf5ff;
+	background-color: #ebf5ff;
 	border-radius: 20px;
 }
 
@@ -1024,14 +1024,15 @@ p {
 /*section № 5, about-history*/
 .about-history {
 	padding: 80px 0 101px 0;
-	background: #F9FCFF;
+	background-color: #F9FCFF;
 }
 
 .about-history__wrapper {
 	display: grid;
 	padding: 90px 100px 0 100px;
-	grid-template-columns: 371px 32px 538px 32px;
-	grid-template-rows: 114px repeat(2,auto);
+	/*grid-template-columns: 371px 32px 538px 32px;*/
+	grid-template-columns: 1fr 32px 2fr 32px;
+	grid-template-rows: repeat(3, auto);
 }
 
 .about-history__photo {
@@ -1082,8 +1083,9 @@ p {
 .about-history__wrapper2 {
 	display: grid;
 	padding: 137px 100px 0 100px;
-	grid-template-columns: 32px 538px 32px 371px;
-	grid-template-rows: 142px repeat(2,auto);
+	/*grid-template-columns: 32px 538px 32px 371px;*/
+	grid-template-columns: 32px 2fr 32px 1fr;
+	grid-template-rows: repeat(3, auto);
 }
 
 .about-history__text2 {
