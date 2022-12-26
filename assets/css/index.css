@@ -805,6 +805,10 @@ p {
 	margin-top: 60px;
 }
 
+.questions__wrapper .button {
+	display: none;
+}
+
 .questions__item {
 	display: flex;
 	justify-content: space-between;
@@ -2141,6 +2145,7 @@ p {
 	}
 
 	.questions__wrapper .button {
+		display: block;
 		margin-top: 40px;
 	}
 
