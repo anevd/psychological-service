@@ -24,7 +24,6 @@ let buttonMore = document.querySelector(".button_questions");
 let questions = document.querySelectorAll(".questions__item");
 if (buttonMore) {
 	buttonMore.onclick = function () {
-		console.log("hi");
 		for (let i = 0; i < questions.length; i++) {
 			questions[i].style.display = "flex";
 			buttonMore.style.display = "none";
@@ -54,19 +53,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // Карусель для home-comfort
 
-let switchComfort = document.querySelectorAll(".carousel__dot_comfort");
-let itemComfort = document.querySelectorAll(".home-comfort__item");
-for (let i = 0; i < switchComfort.length; i++) {
-	switchComfort[i].addEventListener("click", function () {
-		switchComfort.forEach((el) => el.classList.remove("carousel__dot_active"));
-		switchComfort[i].classList.toggle("carousel__dot_active");
-		itemComfort.forEach((el) => (el.style.display = "none"));
-		itemComfort[i].style.display = "block";
-	});
+if (document.documentElement.clientWidth < 480) {
+	let switchComfort = document.querySelectorAll(".carousel__dot_comfort");
+	let itemComfort = document.querySelectorAll(".home-comfort__item");
+	for (let i = 0; i < switchComfort.length; i++) {
+		switchComfort[i].addEventListener("click", function () {
+			switchComfort.forEach((el) => el.classList.remove("carousel__dot_active"));
+			switchComfort[i].classList.toggle("carousel__dot_active");
+			itemComfort.forEach((el) => (el.style.display = "none"));
+			itemComfort[i].style.display = "block";
+		});
+	}
 }
 
 // Карусель для home-quality
-
 let switchQuality = document.querySelectorAll(".carousel__dot_quality");
 let itemQuality = document.querySelectorAll(".home-quality__item");
 for (let i = 0; i < switchQuality.length; i++) {
