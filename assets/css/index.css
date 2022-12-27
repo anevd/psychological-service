@@ -1367,7 +1367,6 @@ p {
 
 .psychologyst-practiceonline {
 	background-color: #ffffff;
-	height: 87vh;
 }
 .psychologyst-practiceonline-wrapper {
 	display: flex;
@@ -1430,7 +1429,7 @@ p {
 }
 .psychologyst-benefits-wrapper {
 	display: grid;
-	padding: 8% 0 0 0;
+	padding: 18% 0 0 0;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 0.13fr 0.88fr 1fr 1.12fr 0.93fr 1fr;
 }
