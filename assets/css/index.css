@@ -65,6 +65,25 @@ p {
 	box-shadow: none;
 }
 
+.carousel {
+	display: none;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 30%;
+}
+
+.carousel__dot_comfort,
+.carousel__dot_quality {
+	width: 10px;
+	height: 10px;
+	background-color: #cde1ff;
+	border-radius: 50%;
+}
+
+.carousel__dot_active {
+	background-color: #7872b9;
+}
+
 /* ------------------------ Header ------------------------ */
 
 .header {
@@ -343,24 +362,6 @@ p {
 
 .home-comfort__item:nth-child(3) .home-comfort__item-descr {
 	margin: 15px 25px 0 25px;
-}
-
-.carousel {
-	display: none;
-	margin: 0 auto;
-	margin-top: 20px;
-	width: 30%;
-}
-
-.carousel__dot {
-	width: 10px;
-	height: 10px;
-	background-color: #cde1ff;
-	border-radius: 50%;
-}
-
-.carousel__dot_active {
-	background-color: #7872b9;
 }
 
 .home-problems {
@@ -1178,6 +1179,8 @@ p {
 
 /* ------------------------ Rates ------------------------ */
 
+/* rates-choice*/
+
 .rates-choice {
 	position: relative;
 	background-color: #f9fcff;
@@ -1210,6 +1213,8 @@ p {
 	letter-spacing: 0.01em;
 	color: #4d4d52;
 }
+
+/*rates-price*/
 
 .rates-price__wrapper {
 	display: flex;
@@ -1335,19 +1340,21 @@ p {
 	color: #7872b9;
 }
 
-.ratest-form {
+/*rates-form*/
+
+.rates-form {
 	width: 100%;
 	height: 370px;
 	margin-top: 50px;
 }
 
-.ratest-promocode__wrapper {
+.rates-promocode__wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.ratest-form__promocode {
+.rates-form__promocode {
 	height: 60px;
 	width: 380px;
 	border: 2px solid #7872b9;
@@ -1359,6 +1366,223 @@ p {
 	letter-spacing: 0.02em;
 	color: rgba(120, 114, 185, 0.6);
 	margin-bottom: 35px;
+}
+
+/*rates-application*/
+
+.rates-application {
+	position: relative;
+	background-color: #f9fcff;
+	height: 788px;
+	width: 100%;
+}
+
+.rates-application__wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rates-application__content {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 120px;
+}
+
+.rates-application__content_title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: #7872B9;
+}
+
+.rates-application__content_subtitle {
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.rates-application__content-screenshot {
+	margin-left: 107px;
+	margin-top: 120px;
+}
+
+.rates-application__img {
+	height:59%;
+	object-fit: contain;
+	position: absolute;
+}
+
+.rates-application__content-runct {
+	display:flex;
+	flex-direction: column;
+}
+
+.rates-application__content-runct_block {
+	display: flex;
+	flex-direction: row;
+}
+
+.rates-application__content-runct_text {
+	margin-left: 30px;
+	margin-top: 35px;
+	font-weight: 400;
+    font-size: 18px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.rates-application__content-runct_svg {
+	margin-top:40px;
+}
+
+.rates-application__btn {
+	width: 380px;
+	height: 70px;
+	background: #7872b9;
+	border-radius: 15px;
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: #ffffff;
+	box-shadow: 9px 13px 0px -1px rgb(205 225 255);
+	cursor: pointer;
+	margin-top: 60px;
+}
+
+.rates-application__btn:hover {
+	box-shadow: 6px 7px 0px -2px rgb(205 225 255);
+	transition: 0.5s all;
+}
+
+.rates-application__btn:focus {
+	background: #4c4883;
+	box-shadow: none;
+}
+
+/*rates-care*/
+
+.rates-care {
+	background-color: #FFF;
+	width: 100%;
+	height: 700px;
+}
+
+.rates-care__wrapper {
+	display: flex;
+	flex-direction: row;
+	background-color: #F9FCFF;
+	margin-top: 155px;
+	margin-bottom: 100px;
+}
+
+.rates-care__block-content {
+	margin: 80px;
+}
+
+.rates-care__subtitle_1 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+	margin-bottom: 10px;
+}
+
+.rates-care__title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: #7872B9;
+	margin-bottom: 20px;
+}
+
+.rates-care__subtitle_2 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.rates-care__block-img {
+	position: absolute;
+	margin-left: 702px;
+	margin-bottom: 85px;
+}
+
+/*rates-steps*/
+
+.rates-steps {
+	width: 100vw;
+	height:470px;
+}
+
+.rates-steps__title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: #7872B9;
+	margin-left:30%;
+}
+
+.rates-steps__runct {
+	display: flex;
+	flex-direction: row;
+	margin-top:86px;
+}
+
+.rates-steps__runct-numb {
+	display: flex;
+	flex-direction: column;
+}
+
+.rates-steps__runct-nmb-img {
+	padding-left: 6em;
+	padding-bottom: 2em;
+	background-image: url(../icons/spot.svg);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.rates-steps__runct-nmb-image_1 {
+	height: 80px;
+	margin-bottom: 1em;
+}
+
+.rates-steps__runct-nmb-text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 140%;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #4D4D52;
+}
+
+.rates-steps__runct-nmb-image_2, .rates-steps__runct-nmb-image_3 {
+	height: 80px;
+	padding-right: 6em;
+	margin-bottom: 1em;
+}
+
+.rates-steps__arrow_1, .rates-steps__arrow_2 {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.rates-steps__arrow_2 {
+	margin-top: 4em;
 }
 
 /* ------------------------ Psychologists ------------------------ */
@@ -2316,13 +2540,29 @@ p {
 	/* ------------------------ Rates ------------------------ */
 
 	/* ------------------------ Psychologists ------------------------ */
-	.psychologyst-practiceonline-content__title, .psychologyst-benefits-title, .psychologyst-waitfromyou-title, .psychologyst-4stepsforjob-title {
+	.psychologyst-practiceonline-content__title,
+	.psychologyst-benefits-title,
+	.psychologyst-waitfromyou-title,
+	.psychologyst-4stepsforjob-title {
 		font-size: 4.17vw;
 	}
-	.psychologyst-practiceonline-content__text, .psychologyst-benefits-section__subtitle, .psychologyst-benefits-sectionwithicon__subtitle, .psychologyst-waitfromyou-sectionwithicon__subtitle, .psychologyst-waitfromyou-section__subtitle, .psychologyst-4stepsforjob-section__subtitle {
+	.psychologyst-practiceonline-content__text,
+	.psychologyst-benefits-section__subtitle,
+	.psychologyst-benefits-sectionwithicon__subtitle,
+	.psychologyst-waitfromyou-sectionwithicon__subtitle,
+	.psychologyst-waitfromyou-section__subtitle,
+	.psychologyst-4stepsforjob-section__subtitle {
 		font-size: 2.5vw;
 	}
-	.psychologyst-practiceonline-content__button, .psychologyst-benefits-sectionwithicon__text, .psychologyst-benefits-section__text, .psychologyst-waitfromyou-sectionwithicon__text, .psychologyst-waitfromyou-section__text, .psychologyst-benefits-section__text, .psychologyst-benefits-section__violettext, .psychologyst-4stepsforjob-section__text, .psychologyst-4stepsforjob-button {
+	.psychologyst-practiceonline-content__button,
+	.psychologyst-benefits-sectionwithicon__text,
+	.psychologyst-benefits-section__text,
+	.psychologyst-waitfromyou-sectionwithicon__text,
+	.psychologyst-waitfromyou-section__text,
+	.psychologyst-benefits-section__text,
+	.psychologyst-benefits-section__violettext,
+	.psychologyst-4stepsforjob-section__text,
+	.psychologyst-4stepsforjob-button {
 		font-size: 2.08vw;
 	}
 	.psychologyst-benefits-wrapper {
@@ -2623,7 +2863,7 @@ p {
 		margin-top: 40px;
 	}
 
-	.questions__item:nth-child(n + 3) {
+	.questions__item:nth-child(n + 4) {
 		display: none;
 	}
 
@@ -2655,6 +2895,13 @@ p {
 		height: 60px;
 		font-size: 17px;
 	}
+
+	.carousel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	/* ------------------------ Header ------------------------ */
 
 	.header__logo-img {
@@ -2662,6 +2909,35 @@ p {
 	}
 
 	/* ------------------------ Footer ------------------------ */
+
+	.footer__wrapper {
+		display: grid;
+		grid-template-rows: repeat(5, 1fr);
+	}
+
+	.footer__contacts {
+		width: 60%;
+		justify-content: start;
+	}
+
+	.footer__nav {
+		grid-area: 2 / 1 / 3 / 2;
+		margin-top: 20px;
+	}
+
+	.footer__menu {
+		justify-items: left;
+	}
+
+	.footer__connection {
+		grid-area: 3 / 1 / 4 / 2;
+		width: 100%;
+		text-align: left;
+	}
+
+	.footer__policy {
+		align-items: flex-start;
+	}
 
 	/* ------------------------ Home ------------------------ */
 
@@ -2673,16 +2949,22 @@ p {
 		flex-direction: column;
 	}
 
+	.home-find__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.home-find__title {
-		font-size: 24px;
+		font-size: 30px;
 		line-height: 130%;
 		font-weight: 700;
-		text-align: center;
 		letter-spacing: 0;
+		text-align: center;
 	}
 
 	.home-find__subtitle {
-		font-size: 24px;
+		font-size: 22px;
 		line-height: 140%;
 		text-align: center;
 		margin: 5px 0 30px 0;
@@ -2692,7 +2974,6 @@ p {
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 140%;
-		text-align: center;
 		margin-left: 0;
 	}
 
@@ -2711,6 +2992,78 @@ p {
 		padding: 40px 0 45px 0;
 	}
 
+	.home-comfort__item {
+		margin-top: 0;
+		width: 100%;
+		padding: 80px 20px 30px 20px;
+	}
+
+	.home-comfort__item-title {
+		font-size: 18px;
+	}
+
+	.home-comfort__item-descr,
+	.home-comfort__item:nth-child(2) .home-comfort__item-descr {
+		font-size: 14px;
+	}
+
+	.home-comfort__item:nth-child(n + 2) {
+		display: none;
+	}
+
+	.home-problems__descr {
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	.home-quality {
+		padding: 40px 0 45px 0;
+	}
+
+	.home-quality__subtitle {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
+	}
+
+	.home-quality__descr {
+		width: 100%;
+		margin-top: 21px;
+		font-size: 13px;
+		line-height: 140%;
+	}
+
+	.home-quality__wrapper {
+		display: flex;
+	}
+
+	.home-quality__item:nth-child(n + 2) {
+		display: none;
+	}
+
+	.home-quality__education,
+	.home-quality__work-experience,
+	.home-quality__learning,
+	.home-quality__therapy {
+		min-height: 154px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.home-quality__item-title {
+		font-size: 18px;
+	}
+
+	.home-quality__item-descr {
+		margin-top: 8px;
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	.home-quality .carousel {
+		width: 43%;
+	}
+
 	/* ------------------------ About ------------------------ */
 
 	/* ------------------------ Rates ------------------------ */
@@ -2724,6 +3077,18 @@ p {
 	.container {
 		max-width: 300px;
 	}
+	.title_left {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.inactive {
+		display: none;
+	}
+
+	.active {
+		display: block;
+	}
 
 	/* ------------------------ Header ------------------------ */
 
@@ -2731,18 +3096,59 @@ p {
 
 	/* ------------------------ Home ------------------------ */
 
-	.home-comfort__item {
-		margin-top: 0;
+	.home-problems__subtitle {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
 	}
 
-	.home-comfort__item:nth-child(n + 2) {
-		display: none;
+	.home-problems__descr {
+		width: 100%;
+		margin-top: 15px;
 	}
 
-	.carousel {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	.home-steps {
+		padding: 40px 0 50px 0;
+	}
+
+	.home-steps .title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	.home-steps__wrapper {
+		margin-top: 28px;
+	}
+
+	.home-steps__item-img {
+		height: 50px;
+	}
+	.home-steps__item-img img {
+		height: 100%;
+	}
+
+	.home-steps__item-spot {
+		width: 50px;
+	}
+
+	.home-steps__item-text {
+		width: 100%;
+	}
+
+	.home-steps__item-title {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
+	}
+
+	.home-steps__item-descr {
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	.home-questions {
+		padding: 50px 0;
 	}
 
 	/* ------------------------ About ------------------------ */

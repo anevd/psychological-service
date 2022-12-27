@@ -19,6 +19,17 @@ for (let i = 0; i < plus.length; i++) {
 	});
 }
 
+// Больше вопросов
+let buttonMore = document.querySelector(".button_questions");
+let questions = document.querySelectorAll(".questions__item");
+buttonMore.addEventListener("click", function () {
+	console.log("hi");
+	for (let i = 0; i < questions.length; i++) {
+		questions[i].style.display = "flex";
+		buttonMore.style.display = "none";
+	}
+});
+
 // Гамбургер-меню
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -39,15 +50,28 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
-// Карусель
+// Карусель для home-comfort
 
-let switchButton = document.querySelectorAll(".carousel__dot");
-let item = document.querySelectorAll(".home-comfort__item");
-for (let i = 0; i < switchButton.length; i++) {
-	switchButton[i].addEventListener("click", function () {
-		switchButton.forEach((el) => el.classList.remove("carousel__dot_active"));
-		switchButton[i].classList.toggle("carousel__dot_active");
-		item.forEach((el) => (el.style.display = "none"));
-		item[i].style.display = "block";
+let switchComfort = document.querySelectorAll(".carousel__dot_comfort");
+let itemComfort = document.querySelectorAll(".home-comfort__item");
+for (let i = 0; i < switchComfort.length; i++) {
+	switchComfort[i].addEventListener("click", function () {
+		switchComfort.forEach((el) => el.classList.remove("carousel__dot_active"));
+		switchComfort[i].classList.toggle("carousel__dot_active");
+		itemComfort.forEach((el) => (el.style.display = "none"));
+		itemComfort[i].style.display = "block";
+	});
+}
+
+// Карусель для home-quality
+
+let switchQuality = document.querySelectorAll(".carousel__dot_quality");
+let itemQuality = document.querySelectorAll(".home-quality__item");
+for (let i = 0; i < switchQuality.length; i++) {
+	switchQuality[i].addEventListener("click", function () {
+		switchQuality.forEach((el) => el.classList.remove("carousel__dot_active"));
+		switchQuality[i].classList.toggle("carousel__dot_active");
+		itemQuality.forEach((el) => (el.style.display = "none"));
+		itemQuality[i].style.display = "block";
 	});
 }
