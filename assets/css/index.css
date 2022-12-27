@@ -1992,10 +1992,11 @@ p {
 	margin-top: 70px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .contacts__item {
-	width: 50%;
+	width: 45%;
 	margin-top: 63px;
 }
 
@@ -2412,6 +2413,10 @@ p {
 		display: none;
 	}
 	/* ------------------------ Contacts ------------------------ */
+
+	.contacts {
+		padding: 70px 0 90px 0;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -2665,6 +2670,18 @@ p {
 	/* ------------------------ Psychologists ------------------------ */
 
 	/* ------------------------ Contacts ------------------------ */
+
+	.contacts__item-title {
+		font-size: 20px;
+	}
+
+	.contacts__descr {
+		font-size: 17px;
+	}
+
+	.contacts__item {
+		width: 40%;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -2858,6 +2875,19 @@ p {
 	/* ------------------------ Psychologists ------------------------ */
 
 	/* ------------------------ Contacts ------------------------ */
+
+	.contacts__wrapper {
+		flex-direction: column;
+	}
+
+	.contacts__item {
+		width: 100%;
+	}
+
+	.contacts__item,
+	.contacts__item:nth-child(2) {
+		margin-top: 30px;
+	}
 }
 
 @media screen and (max-width: 360px) {
@@ -2945,4 +2975,22 @@ p {
 	/* ------------------------ Psychologists ------------------------ */
 
 	/* ------------------------ Contacts ------------------------ */
+
+	.contacts {
+		padding: 30px 0 35px 0;
+	}
+
+	.contacts__header {
+		flex-direction: column;
+	}
+
+	.contacts__title {
+		padding-left: 0;
+		margin-top: 15px;
+	}
+
+	.contacts__wrapper {
+		margin-top: 40px;
+		text-align: center;
+	}
 }

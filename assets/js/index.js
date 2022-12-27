@@ -22,13 +22,15 @@ for (let i = 0; i < plus.length; i++) {
 // Больше вопросов
 let buttonMore = document.querySelector(".button_questions");
 let questions = document.querySelectorAll(".questions__item");
-buttonMore.addEventListener("click", function () {
-	console.log("hi");
-	for (let i = 0; i < questions.length; i++) {
-		questions[i].style.display = "flex";
-		buttonMore.style.display = "none";
-	}
-});
+if (buttonMore) {
+	buttonMore.onclick = function () {
+		console.log("hi");
+		for (let i = 0; i < questions.length; i++) {
+			questions[i].style.display = "flex";
+			buttonMore.style.display = "none";
+		}
+	};
+}
 
 // Гамбургер-меню
 
