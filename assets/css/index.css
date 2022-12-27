@@ -65,6 +65,25 @@ p {
 	box-shadow: none;
 }
 
+.carousel {
+	display: none;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 30%;
+}
+
+.carousel__dot_comfort,
+.carousel__dot_quality {
+	width: 10px;
+	height: 10px;
+	background-color: #cde1ff;
+	border-radius: 50%;
+}
+
+.carousel__dot_active {
+	background-color: #7872b9;
+}
+
 /* ------------------------ Header ------------------------ */
 
 .header {
@@ -343,24 +362,6 @@ p {
 
 .home-comfort__item:nth-child(3) .home-comfort__item-descr {
 	margin: 15px 25px 0 25px;
-}
-
-.carousel {
-	display: none;
-	margin: 0 auto;
-	margin-top: 20px;
-	width: 30%;
-}
-
-.carousel__dot {
-	width: 10px;
-	height: 10px;
-	background-color: #cde1ff;
-	border-radius: 50%;
-}
-
-.carousel__dot_active {
-	background-color: #7872b9;
 }
 
 .home-problems {
@@ -2044,13 +2045,29 @@ p {
 	/* ------------------------ Rates ------------------------ */
 
 	/* ------------------------ Psychologists ------------------------ */
-	.psychologyst-practiceonline-content__title, .psychologyst-benefits-title, .psychologyst-waitfromyou-title, .psychologyst-4stepsforjob-title {
+	.psychologyst-practiceonline-content__title,
+	.psychologyst-benefits-title,
+	.psychologyst-waitfromyou-title,
+	.psychologyst-4stepsforjob-title {
 		font-size: 4.17vw;
 	}
-	.psychologyst-practiceonline-content__text, .psychologyst-benefits-section__subtitle, .psychologyst-benefits-sectionwithicon__subtitle, .psychologyst-waitfromyou-sectionwithicon__subtitle, .psychologyst-waitfromyou-section__subtitle, .psychologyst-4stepsforjob-section__subtitle {
+	.psychologyst-practiceonline-content__text,
+	.psychologyst-benefits-section__subtitle,
+	.psychologyst-benefits-sectionwithicon__subtitle,
+	.psychologyst-waitfromyou-sectionwithicon__subtitle,
+	.psychologyst-waitfromyou-section__subtitle,
+	.psychologyst-4stepsforjob-section__subtitle {
 		font-size: 2.5vw;
 	}
-	.psychologyst-practiceonline-content__button, .psychologyst-benefits-sectionwithicon__text, .psychologyst-benefits-section__text, .psychologyst-waitfromyou-sectionwithicon__text, .psychologyst-waitfromyou-section__text, .psychologyst-benefits-section__text, .psychologyst-benefits-section__violettext, .psychologyst-4stepsforjob-section__text, .psychologyst-4stepsforjob-button {
+	.psychologyst-practiceonline-content__button,
+	.psychologyst-benefits-sectionwithicon__text,
+	.psychologyst-benefits-section__text,
+	.psychologyst-waitfromyou-sectionwithicon__text,
+	.psychologyst-waitfromyou-section__text,
+	.psychologyst-benefits-section__text,
+	.psychologyst-benefits-section__violettext,
+	.psychologyst-4stepsforjob-section__text,
+	.psychologyst-4stepsforjob-button {
 		font-size: 2.08vw;
 	}
 	.psychologyst-benefits-wrapper {
@@ -2452,6 +2469,18 @@ p {
 	.container {
 		max-width: 300px;
 	}
+	.title_left {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.inactive {
+		display: none;
+	}
+
+	.active {
+		display: block;
+	}
 
 	/* ------------------------ Header ------------------------ */
 
@@ -2461,6 +2490,17 @@ p {
 
 	.home-comfort__item {
 		margin-top: 0;
+		width: 100%;
+		padding: 80px 20px 30px 20px;
+	}
+
+	.home-comfort__item-title {
+		font-size: 18px;
+	}
+
+	.home-comfort__item-descr,
+	.home-comfort__item:nth-child(2) .home-comfort__item-descr {
+		font-size: 14px;
 	}
 
 	.home-comfort__item:nth-child(n + 2) {
@@ -2471,6 +2511,66 @@ p {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	.home-problems__subtitle {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
+	}
+
+	.home-problems__descr {
+		font-size: 14px;
+		line-height: 140%;
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.home-quality {
+		padding: 40px 0 45px 0;
+	}
+
+	.home-quality__subtitle {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
+	}
+
+	.home-quality__descr {
+		width: 100%;
+		margin-top: 21px;
+		font-size: 13px;
+		line-height: 140%;
+	}
+
+	.home-quality__wrapper {
+		display: flex;
+	}
+
+	.home-quality__item:nth-child(n + 2) {
+		display: none;
+	}
+
+	.home-quality__education,
+	.home-quality__work-experience,
+	.home-quality__learning,
+	.home-quality__therapy {
+		min-height: 154px;
+		text-align: center;
+	}
+
+	.home-quality__item-title {
+		font-size: 18px;
+	}
+
+	.home-quality__item-descr {
+		margin-top: 8px;
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	.home-quality .carousel {
+		width: 43%;
 	}
 
 	/* ------------------------ About ------------------------ */
