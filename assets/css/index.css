@@ -2872,6 +2872,125 @@ p {
 	}
 
 	/* ------------------------ About ------------------------ */
+	/*section № 1, about-together*/
+	.about-together {
+		padding: 50px 0 20px 0;
+	}
+
+	.about-together__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.about-together__content {
+		text-align: center;
+	}
+
+	.about-together__title-line {
+		transform: translate(-137%, -97%);
+	}
+
+	/*section № 2, about-values*/
+	.about-values {
+		padding: 45px 0 0 0;
+	}
+
+	.about-values__wrapper {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 90px;
+	}
+
+	.about-values__item {
+		width: 80%;
+		max-height: min-content;
+		margin-bottom: 70px;
+	}
+
+	.about-values__item-title {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	.about-values__item-text {
+		font-size: 18px;
+		line-height: 25.2px;
+	}
+
+	/*section № 3, about-experts*/
+	.about-experts {
+		padding: 25px 0 25px 0;
+	}
+
+	.about-experts__title {
+		width: 513px;
+	}
+
+	.about-experts__title-line {
+		transform: translate(94%, 0);
+		width: 215px;
+	}
+
+	/*section № 4, about-documents*/
+	.about-documents__item_big {
+		width: 100%;
+	}
+
+	.about-documents__item_small {
+		width: 100%;
+	}
+
+	/*section № 5, about-history*/
+	.about-history {
+		padding: 30px 0 30px 0;
+	}
+
+	.about-history__wrapper {
+		padding: 30px 20px 0 20px;
+		grid-template-columns: 32px 1fr 32px;
+		grid-template-rows: repeat(4, auto);
+		row-gap: 10px;
+	}
+
+	.about-history__wrapper2 {
+		padding: 50px 20px 0 20px;
+		grid-template-columns: 32px 1fr 32px;
+		grid-template-rows: repeat(4, auto);
+		row-gap: 10px;
+	}
+
+	.about-history__photo {
+		grid-column: 1/5;
+		justify-self: center;
+	}
+
+	.about-history__photo2 {
+		grid-column: 1/5;
+		justify-self: center;
+	}
+
+	.about-history__name {
+		grid-column: 1/5;
+	}
+
+	.about-history__description {
+		grid-column: 1/5;
+	}
+
+	/*section № 6, about-media*/
+	.about-media {
+		padding: 50px 0 50px 0;
+	}
+
+	.about-media__wrapper {
+		padding-top: 35px;
+		gap: 20px;
+	}
+	
+	.about-media__logo {
+		width: 40%;
+	}
 
 	/* ------------------------ Rates ------------------------ */
 
