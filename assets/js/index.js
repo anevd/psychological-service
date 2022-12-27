@@ -38,3 +38,16 @@ window.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 });
+
+// Карусель
+
+let switchButton = document.querySelectorAll(".carousel__dot");
+let item = document.querySelectorAll(".home-comfort__item");
+for (let i = 0; i < switchButton.length; i++) {
+	switchButton[i].addEventListener("click", function () {
+		switchButton.forEach((el) => el.classList.remove("carousel__dot_active"));
+		switchButton[i].classList.toggle("carousel__dot_active");
+		item.forEach((el) => (el.style.display = "none"));
+		item[i].style.display = "block";
+	});
+}
