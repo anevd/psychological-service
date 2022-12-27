@@ -14,7 +14,7 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__wrapper">
-					<div class="header__logo"><img src="../assets/icons/logo.svg" alt="YouMi's logo" /></div>
+					<div class="header__logo"><a href="../index.html" target="_blank" class="header__logo"><img src="../assets/icons/logo.svg" alt="YouMi's logo" /></a></div>
 					<nav class="header__nav">
 						<ul class="header__menu">
 							<li><a href="./about.html" target="_blank" class="header__link">О нас</a></li>
@@ -26,19 +26,21 @@
 				</div>
 			</div>
 		</header>
+
 		<section class="rates-choice">
 			<div class="container">
 				<div class="rates-choice__wrapper">
 					<div class="rates-choice__content">
 						<h1 class="rates-choice__title">Выберите количество сессий,<br />которое вы хотите оплатить.</h1>
 						<p class="rates-choice__subtitle">Оплачивая пакет от 4 сессий вы получаете<br />доступ к приложению</p>
-						<button class="button">Узнать больше</button>
+						<form action="#price">
+						<button class="button">Узнать больше</button></form>
 					</div>
 					<div><img src="../assets/icons/rates-choice-img.svg" alt="image on section with search" class="rates-choice__img" /></div>
 				</div>
 			</div>
 		</section>
-	
+
 		<section class="rates-price">
 			<div class="container">
 				<h2 class="title" id="price">Тарифы</h2>
@@ -126,21 +128,98 @@
 				</div>
 			</div>
 		</section>
-		<section class="ratest-form">
+
+		<section class="rates-form">
 			<div class="container">
-				<div class="ratest-promocode__wrapper">
+				<div class="rates-promocode__wrapper">
 					<form>
-						<input class="ratest-form__promocode" type="text" name="promocode" placeholder="Введите промокод" />
+						<input class="rates-form__promocode" type="text" name="promocode" placeholder="Введите промокод" />
 					</form>
 					<button class="button">Отправить</button>
 				</div>
 			</div>
 		</section>
+
+		<section class="rates-application">
+			<div class="container">
+				<div class="rates-application__wrapper">
+					<div class="rates-application__content">
+						<h2 class="rates-application__content_title">Оплачивая пакет от 4 сессий</h2>
+						<p class="rates-application__content_subtitle">мы дарим доступ к приложению<br/>с виртуальным психологом</p>
+						<div class="rates-application__content-runct">
+							<div class="rates-application__content-runct_block">
+								<img src="../assets/icons/rates-application.svg" alt="runct" class="rates-application__content-runct_svg">
+								<p class="rates-application__content-runct_text">Прорабатывайте себя с помощью<br/>упражнений и аудиопрактик</p></div>
+							<div class="rates-application__content-runct_block">
+								<img src="../assets/icons/rates-application.svg" alt="runct" class="rates-application__content-runct_svg">
+								<p class="rates-application__content-runct_text">Ведите личный дневник настроения<br/>и получайте подробную статистику о себе</p></div>
+							<div class="rates-application__content-runct_block">
+								<img src="../assets/icons/rates-application.svg" alt="runct" class="rates-application__content-runct_svg">
+								<p class="rates-application__content-runct_text">Расскажите виртуальному психологу о своих<br/>чувствах и он подберет индивидуальный материал</p></div>
+							<form action="https://www.apple.com/ru/app-store/" target="_blank">
+								<button class="rates-application__btn">Доступно в App Store</button></form>
+						</div>
+					</div>
+						<div class="rates-application__content-screenshot"><img src="../assets/images/rates-application__img.png" alt="screen from application" class="rates-application__img"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="rates-care">
+			<div class="container">
+				<div class="rates-care__wrapper">
+						<div class="rates-care__block-content">
+							<p class="rates-care__subtitle_1">Реферальная программа</p>
+							<h2 class="rates-care__title">Позаботьтесь о других</h2>
+							<p class="rates-care__subtitle_2">С помощью реферальной программы вы можете<br/>приглашать своих друзей по вашей<br/>индивидуальной ссылке и получать 500 рублей<br/>за каждого, кто пройдет первую сессию.<br/><br/>
+								Деньги поступают на ваш баланс, с которого вы<br/>можете оплачивать сесии.</p>
+						</div>
+						<div class="rates-care__block-img">
+							<img src="../assets/icons/rates-care.svg" alt="many people">
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<section class="rates-steps">
+			<div class="container">
+				<div class="rates-steps__wrapper">
+					<h2 class="rates-steps__title">Как происходит программа</h2>
+					<div class="rates-steps__runct">
+						<div class="rates-steps__runct-nmb">
+							<div class="rates-steps__runct-nmb-img">
+								<img src="../assets/icons/1.svg" alt="number" class="rates-steps__runct-nmb-image_1">
+							</div>
+							<p class="rates-steps__runct-nmb-text">Копируете<br/> и отправляете личную<br/>реферальную ссылку</p>
+						</div>
+						<div class="rates-steps__arrow_1">
+							<img src="../assets/icons/rates-arrow1.svg" alt="arrow">
+						</div>
+						<div class="rates-steps__runct-nmb">
+							<div class="rates-steps__runct-nmb-img">
+								<img src="../assets/icons/2.svg" alt="number" class="rates-steps__runct-nmb-image_2">
+							</div>
+							<p class="rates-steps__runct-nmb-text">Ваш друг переходит<br/> и регистрируется<br/>по ней</p>
+						</div>
+						<div class="rates-steps__arrow_2">
+							<img src="../assets/icons/rates-arrow2.svg" alt="arrow">
+						</div>
+						<div class="rates-steps__runct-nmb">
+							<div class="rates-steps__runct-nmb-img">
+								<img src="../assets/icons/3.svg" alt="number" class="rates-steps__runct-nmb-image_3">
+							</div>
+							<p class="rates-steps__runct-nmb-text">Проходит первую<br/>сессию, вы получаете<br/>бонус на баланс</p>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</section>
+
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__wrapper">
 					<div class="footer__contacts">
-						<div class="footer__logo"><img src="../assets/icons/logo.svg" alt="YouMi's logo" /></div>
+						<div class="footer__logo"><a href="../index.html" target="_blank" class="footer__logo"><img src="../assets/icons/logo.svg" alt="YouMi's logo" /></a></div>
 						<div class="footer__socials">
 							<a href="https://vk.com" target="_blank" class="footer__socials-logo"><img src="../assets/icons/vk.svg" alt="vk logo" /></a>
 							<a href="https://telegram.org/" target="_blank" class="footer__socials-logo"><img src="../assets/icons/telegram.svg" alt="telegram logo" /></a>
