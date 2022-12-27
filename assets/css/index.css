@@ -1370,7 +1370,7 @@ p {
 }
 .psychologyst-practiceonline-wrapper {
 	display: flex;
-	padding: 9% 0 0 0;
+	padding: 9% 0 9% 0;
 }
 .psychologyst-practiceonline-content {
 	width: 60%;
@@ -1379,7 +1379,7 @@ p {
 	margin: 0;
 	padding: 0 10% 0 0;
 	font-weight: 800;
-	font-size: 2.5em;
+	font-size: 40px;
 	line-height: 130%;
 	letter-spacing: 0.02em;
 	color: #7872b9;
@@ -1387,7 +1387,7 @@ p {
 .psychologyst-practiceonline-content__text {
 	padding: 4% 10% 7% 0;
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: 24px;
 	line-height: 140%;
 	color: #4d4d52;
 	letter-spacing: 0.01em;
@@ -1429,7 +1429,7 @@ p {
 }
 .psychologyst-benefits-wrapper {
 	display: grid;
-	padding: 18% 0 0 0;
+	padding: 9% 0 0 0;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 0.13fr 0.88fr 1fr 1.12fr 0.93fr 1fr;
 }
@@ -1456,9 +1456,9 @@ p {
 .psychologyst-benefits-title {
 	grid-column: 1/4;
 	grid-row: 1/2;
-	margin: 0;
+	margin: 0 0 4% 0;
 	font-weight: 800;
-	font-size: 2.5em;
+	font-size: 40px;
 	line-height: 130%;
 	letter-spacing: 0.02em;
 	color: #7872b9;
@@ -1474,6 +1474,7 @@ p {
 }
 .psychologyst-benefits-section__icon {
 	position: absolute;
+	max-width: 25%;
 	left: 4%;
 	top: -18%;
 }
@@ -1536,7 +1537,7 @@ p {
 	grid-row: 1/2;
 	align-self: center;
 	font-weight: 800;
-	font-size: 2.5em;
+	font-size: 40px;
 	line-height: 130%;
 	letter-spacing: 0.02em;
 	color: #7872b9;
@@ -1554,9 +1555,11 @@ p {
 	border-radius: 20px;
 }
 .psychologyst-waitfromyou-sectionwithicon__icon {
+	max-width: 80%;
 	grid-area: psy-wait-icon;
+	align-self: center;
 }
-.psychologyst-benefits-sectionwithicon__subtitle {
+.psychologyst-waitfromyou-sectionwithicon__subtitle {
 	grid-area: psy-wait-subtitle;
 	align-self: end;
 	margin: 0;
@@ -1567,7 +1570,7 @@ p {
 	letter-spacing: 0.01em;
 	color: #4d4d52;
 }
-.psychologyst-benefits-sectionwithicon__text {
+.psychologyst-waitfromyou-sectionwithicon__text {
 	grid-area: psy-wait-text;
 	font-weight: 400;
 	font-size: 20px;
@@ -1580,7 +1583,7 @@ p {
 	background: #ebf5ff;
 	border-radius: 20px;
 }
-.psychologyst-benefits-section__subtitle {
+.psychologyst-waitfromyou-section__subtitle {
 	margin: 0;
 	padding: 0 0 3% 0;
 	font-weight: 600;
@@ -1589,7 +1592,7 @@ p {
 	letter-spacing: 0.01em;
 	color: #4d4d52;
 }
-.psychologyst-benefits-section__text {
+.psychologyst-waitfromyou-section__text {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 140%;
@@ -1610,7 +1613,7 @@ p {
 	grid-row: 1/2;
 	align-self: center;
 	font-weight: 800;
-	font-size: 2.5em;
+	font-size: 40px;
 	line-height: 130%;
 	letter-spacing: 0.02em;
 	color: #7872b9;
@@ -1661,16 +1664,17 @@ p {
 .psychologyst-4stepsforjob-section {
 	margin-bottom: 22%;
 	position: relative;
-	align-self: center;
 }
 .psychologyst-4stepsforjob-section__iconnumber {
 	position: absolute;
+	top: 1%;
+	left: -3%;
 	z-index: 2;
 }
 .psychologyst-4stepsforjob-section__iconoval {
 	position: absolute;
-	top: -30%;
-	left: 3%;
+	top: -15%;
+	left: 1%;
 	z-index: 1;
 }
 .psychologyst-4stepsforjob-section__subtitle {
@@ -1695,18 +1699,21 @@ p {
 	color: #4d4d52;
 }
 .psychologyst-4stepsforjob-iconrightarrow1 {
+	max-width: 100%;
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	left: 130%;
 }
 .psychologyst-4stepsforjob-iconleftarrow {
+	max-width: 100%;
 	position: absolute;
-	top: 100%;
+	top: 60%;
 	left: -50%;
 }
 .psychologyst-4stepsforjob-iconrightarrow2 {
+	max-width: 100%;
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	left: 125%;
 }
 /* ------------------------ Contacts ------------------------ */
@@ -2019,6 +2026,18 @@ p {
 	/* ------------------------ Rates ------------------------ */
 
 	/* ------------------------ Psychologists ------------------------ */
+	.psychologyst-practiceonline-content__title, .psychologyst-benefits-title, .psychologyst-waitfromyou-title, .psychologyst-4stepsforjob-title {
+		font-size: 4.17vw;
+	}
+	.psychologyst-practiceonline-content__text, .psychologyst-benefits-section__subtitle, .psychologyst-benefits-sectionwithicon__subtitle, .psychologyst-waitfromyou-sectionwithicon__subtitle, .psychologyst-waitfromyou-section__subtitle, .psychologyst-4stepsforjob-section__subtitle {
+		font-size: 2.5vw;
+	}
+	.psychologyst-practiceonline-content__button, .psychologyst-benefits-sectionwithicon__text, .psychologyst-benefits-section__text, .psychologyst-waitfromyou-sectionwithicon__text, .psychologyst-waitfromyou-section__text, .psychologyst-4stepsforjob-button {
+		font-size: 2.08vw;
+	}
+	.psychologyst-benefits-section__text, .psychologyst-benefits-section__violettext, .psychologyst-4stepsforjob-section__text {
+		font-size: 1.98vw;
+	}
 
 	/* ------------------------ Contacts ------------------------ */
 }
