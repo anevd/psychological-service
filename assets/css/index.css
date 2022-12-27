@@ -2400,89 +2400,18 @@ p {
 		height: 60px;
 		font-size: 17px;
 	}
+
+	.carousel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	/* ------------------------ Header ------------------------ */
 
 	.header__logo-img {
 		width: 100%;
 	}
-
-	/* ------------------------ Footer ------------------------ */
-
-	/* ------------------------ Home ------------------------ */
-
-	.home-find {
-		padding: 47px 0 91px 0;
-	}
-
-	.home-find__wrapper {
-		flex-direction: column;
-	}
-
-	.home-find__title {
-		font-size: 24px;
-		line-height: 130%;
-		font-weight: 700;
-		text-align: center;
-		letter-spacing: 0;
-	}
-
-	.home-find__subtitle {
-		font-size: 24px;
-		line-height: 140%;
-		text-align: center;
-		margin: 5px 0 30px 0;
-	}
-
-	.home-find__descr {
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 140%;
-		text-align: center;
-		margin-left: 0;
-	}
-
-	.home-find__img {
-		display: block;
-		margin-top: 18px;
-	}
-
-	.home-find__icon-message {
-		display: block;
-		width: 40px;
-		bottom: 20px;
-	}
-
-	.home-comfort {
-		padding: 40px 0 45px 0;
-	}
-
-	/* ------------------------ About ------------------------ */
-
-	/* ------------------------ Rates ------------------------ */
-
-	/* ------------------------ Psychologists ------------------------ */
-
-	/* ------------------------ Contacts ------------------------ */
-}
-
-@media screen and (max-width: 360px) {
-	.container {
-		max-width: 300px;
-	}
-	.title_left {
-		font-size: 18px;
-		font-weight: 700;
-	}
-
-	.inactive {
-		display: none;
-	}
-
-	.active {
-		display: block;
-	}
-
-	/* ------------------------ Header ------------------------ */
 
 	/* ------------------------ Footer ------------------------ */
 
@@ -2517,6 +2446,57 @@ p {
 
 	/* ------------------------ Home ------------------------ */
 
+	.home-find {
+		padding: 47px 0 91px 0;
+	}
+
+	.home-find__wrapper {
+		flex-direction: column;
+	}
+
+	.home-find__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.home-find__title {
+		font-size: 30px;
+		line-height: 130%;
+		font-weight: 700;
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	.home-find__subtitle {
+		font-size: 22px;
+		line-height: 140%;
+		text-align: center;
+		margin: 5px 0 30px 0;
+	}
+
+	.home-find__descr {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;
+		margin-left: 0;
+	}
+
+	.home-find__img {
+		display: block;
+		margin-top: 18px;
+	}
+
+	.home-find__icon-message {
+		display: block;
+		width: 40px;
+		bottom: 20px;
+	}
+
+	.home-comfort {
+		padding: 40px 0 45px 0;
+	}
+
 	.home-comfort__item {
 		margin-top: 0;
 		width: 100%;
@@ -2536,23 +2516,9 @@ p {
 		display: none;
 	}
 
-	.carousel {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.home-problems__subtitle {
-		font-weight: 600;
-		font-size: 16px;
-		line-height: 140%;
-	}
-
 	.home-problems__descr {
 		font-size: 14px;
 		line-height: 140%;
-		width: 100%;
-		margin-top: 15px;
 	}
 
 	.home-quality {
@@ -2586,6 +2552,7 @@ p {
 	.home-quality__therapy {
 		min-height: 154px;
 		text-align: center;
+		width: 100%;
 	}
 
 	.home-quality__item-title {
@@ -2600,6 +2567,49 @@ p {
 
 	.home-quality .carousel {
 		width: 43%;
+	}
+
+	/* ------------------------ About ------------------------ */
+
+	/* ------------------------ Rates ------------------------ */
+
+	/* ------------------------ Psychologists ------------------------ */
+
+	/* ------------------------ Contacts ------------------------ */
+}
+
+@media screen and (max-width: 360px) {
+	.container {
+		max-width: 300px;
+	}
+	.title_left {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.inactive {
+		display: none;
+	}
+
+	.active {
+		display: block;
+	}
+
+	/* ------------------------ Header ------------------------ */
+
+	/* ------------------------ Footer ------------------------ */
+
+	/* ------------------------ Home ------------------------ */
+
+	.home-problems__subtitle {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
+	}
+
+	.home-problems__descr {
+		width: 100%;
+		margin-top: 15px;
 	}
 
 	.home-steps {
