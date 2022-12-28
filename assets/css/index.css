@@ -3504,11 +3504,8 @@ p {
 		padding: 50px 0 50px 0;
 	}
 	
-	.about-together__wrapper {
-		width: 300px;
-	}
-	
 	.about-together__title {
+		width: 300px;
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 31.2px;
@@ -3524,16 +3521,25 @@ p {
 	}
 
 	/*section № 2, about-values*/
+	.about-values {
+		padding: 45px 0 45px 0;
+	}
+
 	.about-values__item {
 		width: 100%;
 		padding: 80px 20px 30px 20px;
 		height: min-content;
+		margin-bottom: 0;
 	}
 
 	.about-values__item:nth-child(2) {
 		height: min-content;
 	}
 
+	.about-values__item:nth-child(n + 2) {
+		display: none;
+	}
+	
 	.about-values__item-image {
 		width: 110px;
 		transform: translate(-50%, -109%);
@@ -3549,6 +3555,12 @@ p {
 		line-height: 19.6px;
 		letter-spacing: 0.01em;
 		color: #4d4d52;
+	}
+
+	.carousel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	/*section № 3, about-experts*/
@@ -3573,6 +3585,10 @@ p {
 
 	.about-experts__wrapper {
 		padding-top: 41px;
+	}
+
+	.about-experts__item:nth-child(n + 2) {
+		display: none;
 	}
 
 	.about-experts__image {
@@ -3608,6 +3624,10 @@ p {
 		text-align: center;
 	}
 
+	.about-documents__item:nth-child(n + 2) {
+		display: none;
+	}
+
 	.about-documents__item-image {
 		display: none;
 	}
@@ -3625,9 +3645,18 @@ p {
 		line-height: 19.6px;
 	}
 
+	.about-documents .carousel {
+		width: 43%;
+	}
+
 	/*section № 5, about-history*/
-	.about-history__wrapper,
+	.about-history__wrapper {
+		padding: 30px 0 0 0;
+		grid-template-columns: 20px 1fr 20px;
+	}
+
 	.about-history__wrapper2 {
+		padding: 30px 0 0 0;
 		grid-template-columns: 20px 1fr 20px;
 	}
 
@@ -3643,6 +3672,7 @@ p {
 	}
 
 	.about-history__text {
+		padding: 0;
 		font-size: 16px;
 		line-height: 22.4px;
 	}
@@ -3842,7 +3872,11 @@ p {
 	}
 
 	/* ------------------------ About ------------------------ */
-
+	/*section № 3, about-experts*/
+	.about-experts__title-line {
+		width: 145px;
+		transform: translate(90%, 0);
+	}
 	/* ------------------------ Rates ------------------------ */
 
 	/* ------------------------ Psychologists ------------------------ */
