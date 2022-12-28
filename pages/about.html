@@ -27,6 +27,11 @@
 						<li><a href="./contacts.html" target="_blank" class="header__link">Контакты</a></li>
 					</ul>
 				</nav>
+				<div class="hamburger">
+					<img src="../assets/icons/hamburger-menu1.svg" class="hamburger__line" alt="hamburger menu line" />
+					<img src="../assets/icons/hamburger-menu2.svg" class="hamburger__line" alt="hamburger menu line" />
+					<img src="../assets/icons/hamburger-menu3.svg" class="hamburger__line" alt="hamburger menu line" />
+				</div>
 			</div>
 		</div>
 	</header>
@@ -34,11 +39,14 @@
 		<section class="about-together">
 			<div class="container">
 				<div class="about-together__wrapper">
-					<h1 class="about-together__title">В YouMi вы не одни <br> Вместе мы справимся</h1>
-					<img class="about-together__title-line" src="../assets/icons/about-together-line.svg"
-						alt="line around the word together">
+					<div class="about-together__content">
+						<h1 class="about-together__title">В YouMi вы не одни <br> Вместе мы справимся</h1>
+						<img class="about-together__title-line" src="../assets/icons/about-together-line.svg"
+							alt="line around the word together">
+					</div>
 					<div>
-						<img src="../assets/icons/about-lotus-position.svg" alt="Lotus position image">
+						<img class="about-together__image" src="../assets/icons/about-lotus-position.svg"
+							alt="Lotus position image">
 					</div>
 				</div>
 			</div>
@@ -75,29 +83,36 @@
 			<div class="container">
 				<div class="about-experts__heading-wrapper">
 					<p class="about-experts__subtitle">Мы работаем только с</p>
-					<h2 class="title title_left">квалифицированными специалистами, <br> которые прошли наш строгий отбор
-					</h2>
-					<img class="about-experts__title-line" src="../assets/icons/about-expert-line.svg"
-						alt="line under the words strict selection">
+					<div class="about-experts__title">
+						<h2 class="title title_left">квалифицированными специалистами, которые прошли наш строгий
+							отбор
+						</h2>
+						<img class="about-experts__title-line" src="../assets/icons/about-expert-line.svg"
+							alt="line under the words strict selection">
+					</div>
 				</div>
 				<div class="about-experts__wrapper">
 					<div class="about-experts__item">
-						<img src="../assets/images/about-quality1.png" alt="photo of specialist Svetlana">
+						<img class="about-experts__image" src="../assets/images/about-quality1.png"
+							alt="photo of specialist Svetlana">
 						<h3 class="about-experts__item-title">Светлана</h3>
 						<p class="about-experts__item-description">5 лет опыта</p>
 					</div>
 					<div class="about-experts__item">
-						<img src="../assets/images/about-quality2.png" alt="photo of specialist Alexander">
+						<img class="about-experts__image" src="../assets/images/about-quality2.png"
+							alt="photo of specialist Alexander">
 						<h3 class="about-experts__item-title">Александр</h3>
 						<p class="about-experts__item-description">12 лет опыта</p>
 					</div>
 					<div class="about-experts__item">
-						<img src="../assets/images/about-quality3.png" alt="photo of specialist Maria">
+						<img class="about-experts__image" src="../assets/images/about-quality3.png"
+							alt="photo of specialist Maria">
 						<h3 class="about-experts__item-title">Мария</h3>
 						<p class="about-experts__item-description">8 лет опыта</p>
 					</div>
 					<div class="about-experts__item">
-						<img src="../assets/images/about-quality4.png" alt="photo of specialist Elena">
+						<img class="about-experts__image" src="../assets/images/about-quality4.png"
+							alt="photo of specialist Elena">
 						<h3 class="about-experts__item-title">Елена</h3>
 						<p class="about-experts__item-description">10 лет опыта</p>
 					</div>
@@ -141,26 +156,31 @@
 			<div class="container">
 				<h2 class="title">История проекта</h2>
 				<div class="about-history__wrapper">
-					<div class="about-history__photo"><img src="../assets/images/about-history1.png" alt="">
-						<img class="about-history__vector" src="../assets/icons/about-history-vector.svg" alt="">
+					<div class="about-history__photo"><img src="../assets/images/about-history1.png"
+							alt="Photo of co-founder YouMi">
+						<img class="about-history__vector" src="../assets/icons/about-history-vector.svg"
+							alt="light blue ellipse">
 					</div>
-					<img src="../assets/icons/about-quotes-1.svg" alt="">
+					<img src="../assets/icons/about-quotes-1.svg" alt="quotes">
 					<p class="about-history__text">Каждое наше действие основано на заботе о наших клиентах
 						и психотерапевтах. Мы гарантируем защиту
 						и тем, и другим.</p>
-					<img class="about-history__quotes-bottom" src="../assets/icons/about-quotes-2.svg" alt="">
+					<img class="about-history__quotes-bottom" src="../assets/icons/about-quotes-2.svg" alt="quotes">
 					<p class="about-history__name">Мария Литвинова</p>
 					<p class="about-history__description">Соосновательница YouMi</p>
 				</div>
 				<div class="about-history__wrapper2">
-					<img src="../assets/icons/about-quotes-1.svg" alt="">
-					<p class="about-history__text2">Наша миссия — сделать психотерапию понятной для каждого и убрать
+					<img src="../assets/icons/about-quotes-1.svg" alt="quotes">
+					<p class="about-history__text">Наша миссия — сделать психотерапию понятной для каждого и убрать
 						барьеры перед обращением за психологической помощью.</p>
-					<img class="about-history__quotes-bottom" src="../assets/icons/about-quotes-2.svg" alt="">
-					<p class="about-history__name2">Иван Никитин</p>
-					<p class="about-history__description2">Сооснователь YouMi</p>
-					<div class="about-history__photo2"><img src="../assets/images/about-history2.png" alt="">
-						<img class="about-history__vector2" src="../assets/icons/about-history-vector.svg" alt="">
+					<img class="about-history__quotes-bottom" src="../assets/icons/about-quotes-2.svg" alt="quotes">
+					<p class="about-history__name about-history__name_other-columns">Иван Никитин</p>
+					<p class="about-history__description about-history__description_other-columns">Сооснователь YouMi
+					</p>
+					<div class="about-history__photo2"><img src="../assets/images/about-history2.png"
+							alt="Photo of co-founder YouMi">
+						<img class="about-history__vector2" src="../assets/icons/about-history-vector.svg"
+							alt="light blue ellipse">
 					</div>
 				</div>
 			</div>
@@ -225,6 +245,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="../assets/js/index.js"></script>
 </body>
 
 </html>
