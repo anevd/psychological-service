@@ -3156,13 +3156,15 @@ p {
 	.psychologyst-practiceonline-content__button,
 	.psychologyst-benefits-sectionwithicon__text,
 	.psychologyst-benefits-section__text,
-	.psychologyst-waitfromyou-sectionwithicon__text,
-	.psychologyst-waitfromyou-section__text,
 	.psychologyst-benefits-section__text,
 	.psychologyst-benefits-section__violettext,
 	.psychologyst-4stepsforjob-section__text,
 	.psychologyst-4stepsforjob-button {
 		font-size: 2.8vw;
+	}
+.psychologyst-waitfromyou-sectionwithicon__text,
+	.psychologyst-waitfromyou-section__text {
+			font-size: 2.5vw;
 	}
 	.psychologyst-practiceonline-wrapper {
 		flex-direction: column;
