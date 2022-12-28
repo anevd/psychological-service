@@ -1184,7 +1184,7 @@ p {
 .rates-choice {
 	position: relative;
 	background-color: #f9fcff;
-	padding: 75px 0 81px 0;
+	padding: 4.68em 0 5em 0;
 }
 
 .rates-choice__wrapper {
@@ -1212,6 +1212,10 @@ p {
 	line-height: 34px;
 	letter-spacing: 0.01em;
 	color: #4d4d52;
+}
+
+.rates-choise__img {
+	width: 100%;
 }
 
 /*rates-price*/
@@ -1330,8 +1334,8 @@ p {
 }
 
 .rates-price__row5 {
-	height: 30px;
-	margin-top: 25px;
+	height: 40px;
+	margin-top: 15px;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 25px;
@@ -1473,10 +1477,11 @@ p {
 .rates-care {
 	background-color: #fff;
 	width: 100%;
-	height: 700px;
+	height: 600px;
 }
 
 .rates-care__wrapper {
+	height: 451px;
 	display: flex;
 	flex-direction: row;
 	background-color: #f9fcff;
@@ -1549,11 +1554,11 @@ p {
 
 .rates-steps__runct-nmb-img {
 	padding-left: 6em;
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 	background-image: url(../icons/spot.svg);
 	background-size: 40%;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .rates-steps__runct-nmb-image_1 {
@@ -1562,6 +1567,7 @@ p {
 }
 
 .rates-steps__runct-nmb-text {
+	margin-top: 2%;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 140%;
@@ -2151,6 +2157,26 @@ p {
 
 	/* ------------------------ Rates ------------------------ */
 
+	.rates-choice__wrapper {
+		width: 90vw;
+	}
+
+	.rates-application__wrapper {
+		width: 90%;
+		height: 90%;
+	}
+
+	.rates-application__content-screenshot {
+		margin-left: 6%;
+	}
+	
+	.rates-care__block-img {
+		margin-left: 54%;
+	}
+
+	.rates-steps__wrapper {
+		margin-left: 0%;
+	}
 	/* ------------------------ Psychologists ------------------------ */
 
 	/* ------------------------ Contacts ------------------------ */
@@ -2385,6 +2411,60 @@ p {
 	}
 
 	/* ------------------------ Rates ------------------------ */
+
+	.container {
+		width:99vw;
+	}
+
+	.rates-choise {
+		width:100vw;
+		padding: 0;
+	}
+
+	.rates-choice__wrapper {
+		width: 100%;
+	}
+
+	.rates-choice__img {
+		width: 100%;
+		margin-left: 10%;
+	}
+
+	.rates-price__wrapper {
+		width: 100vw;
+	}
+
+	.rates-application {
+		height: 95vh;
+		width: 100vw;
+	}
+
+	.rates-application__content {
+		width: 50vw;
+	}
+
+	.rates-care__wrapper {
+		height: 60vh;
+		width: 95vw;
+	}
+
+	.rates-care__block-content {
+		width: 45vw;
+	}
+
+	.rates-care__block-img {
+		width: 10vw;
+		margin-left: 50%;
+		margin-top: 10%;
+	}
+
+	.rates-steps {
+		width: 98vw;
+	}
+
+	.rates-steps__wrapper {
+		width: 98vw;
+	}
 
 	/* ------------------------ Psychologists ------------------------ */
 
