@@ -52,18 +52,15 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // Карусель для home-comfort
-
-if (document.documentElement.clientWidth < 480) {
-	let switchComfort = document.querySelectorAll(".carousel__dot_comfort");
-	let itemComfort = document.querySelectorAll(".home-comfort__item");
-	for (let i = 0; i < switchComfort.length; i++) {
-		switchComfort[i].addEventListener("click", function () {
-			switchComfort.forEach((el) => el.classList.remove("carousel__dot_active"));
-			switchComfort[i].classList.toggle("carousel__dot_active");
-			itemComfort.forEach((el) => (el.style.display = "none"));
-			itemComfort[i].style.display = "block";
-		});
-	}
+let switchComfort = document.querySelectorAll(".carousel__dot_comfort");
+let itemComfort = document.querySelectorAll(".home-comfort__item");
+for (let i = 0; i < switchComfort.length; i++) {
+	switchComfort[i].addEventListener("click", function () {
+		switchComfort.forEach((el) => el.classList.remove("carousel__dot_active"));
+		switchComfort[i].classList.toggle("carousel__dot_active");
+		itemComfort.forEach((el) => (el.style.display = "none"));
+		itemComfort[i].style.display = "block";
+	});
 }
 
 // Карусель для home-quality
@@ -79,7 +76,7 @@ for (let i = 0; i < switchQuality.length; i++) {
 }
 
 // Карусель для about-values
-/* let switchValues = document.querySelectorAll(".carousel__dot_values");
+let switchValues = document.querySelectorAll(".carousel__dot_values");
 let itemValues = document.querySelectorAll(".about-values__item");
 for (let i = 0; i < switchValues.length; i++) {
 	switchValues[i].addEventListener("click", function () {
@@ -88,7 +85,59 @@ for (let i = 0; i < switchValues.length; i++) {
 		itemValues.forEach((el) => (el.style.display = "none"));
 		itemValues[i].style.display = "block";
 	});
-} */
+}
+
+// Карусель для about-experts
+
+let buttonLeftExperts = document.querySelector(".about-expert__arrow-left");
+let buttonRightExperts = document.querySelector(".about-expert__arrow-right");
+let cardExperts = document.querySelectorAll(".about-experts__item");
+let i = 0;
+buttonRightExperts.onclick = function () {
+	if (i < cardExperts.length - 1) {
+		cardExperts[i].style.display = "none";
+		i = i + 1;
+		cardExperts[i].style.display = "block";
+	} else if (i == cardExperts.length - 1) {
+		cardExperts[i].style.display = "none";
+		i = i + 1;
+	}
+	if (i > cardExperts.length - 1) {
+		i = 0;
+		cardExperts[i].style.display = "block";
+	}
+};
+
+buttonLeftExperts.onclick = function () {
+	if (i == 0) {
+		while (i < cardExperts.length - 1) {
+			cardExperts[i].style.display = "none";
+			i++;
+		}
+		i = cardExperts.length - 1;
+		cardExperts[i].style.display = "block";
+	} else if (i < cardExperts.length - 1 && i > 0) {
+		cardExperts[i].style.display = "none";
+		i = i - 1;
+		cardExperts[i].style.display = "block";
+	} else if (i == cardExperts.length - 1) {
+		cardExperts[i].style.display = "none";
+		i = i - 1;
+		cardExperts[i].style.display = "block";
+	}
+};
+
+// Карусель для about-documents
+let switchDocuments = document.querySelectorAll(".carousel__dot_documents");
+let itemDocuments = document.querySelectorAll(".about-documents__item");
+for (let i = 0; i < switchDocuments.length; i++) {
+	switchDocuments[i].addEventListener("click", function () {
+		switchDocuments.forEach((el) => el.classList.remove("carousel__dot_active"));
+		switchDocuments[i].classList.toggle("carousel__dot_active");
+		itemDocuments.forEach((el) => (el.style.display = "none"));
+		itemDocuments[i].style.display = "block";
+	});
+}
 
 // Карусель для psychologyst-waitfromyou
 let switchWait = document.querySelectorAll(".carousel__dot_waitfromyou");
