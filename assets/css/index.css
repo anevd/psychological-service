@@ -2373,6 +2373,7 @@ p {
 	.about-documents__item-image {
 		padding: 20px 30px 20px 30px;
 	}
+
 	.about-documents__item-text {
 		padding: 10px 15px 10px 0;
 	}
@@ -3130,6 +3131,10 @@ p {
 		margin-bottom: 70px;
 	}
 
+	.about-values__item:nth-child(2) {
+		max-height: min-content;
+	}
+
 	.about-values__item-title {
 		font-size: 24px;
 		line-height: 36px;
@@ -3146,7 +3151,7 @@ p {
 	}
 
 	.about-experts__title {
-		width: 513px;
+		width: 475px;
 	}
 
 	.about-experts__title-line {
@@ -3190,6 +3195,10 @@ p {
 	.about-history__photo2 {
 		grid-column: 1/5;
 		justify-self: center;
+	}
+
+	.about-history__text {
+		text-align: center;
 	}
 
 	.about-history__name {
@@ -3288,13 +3297,15 @@ p {
 	.psychologyst-practiceonline-content__button,
 	.psychologyst-benefits-sectionwithicon__text,
 	.psychologyst-benefits-section__text,
-	.psychologyst-waitfromyou-sectionwithicon__text,
-	.psychologyst-waitfromyou-section__text,
 	.psychologyst-benefits-section__text,
 	.psychologyst-benefits-section__violettext,
 	.psychologyst-4stepsforjob-section__text,
 	.psychologyst-4stepsforjob-button {
 		font-size: 2.8vw;
+	}
+	.psychologyst-waitfromyou-sectionwithicon__text,
+	.psychologyst-waitfromyou-section__text {
+			font-size: 2.5vw;
 	}
 	.psychologyst-practiceonline-wrapper {
 		flex-direction: column;
@@ -3622,6 +3633,206 @@ p {
 	}
 
 	/* ------------------------ About ------------------------ */
+	/*section № 1, about-together*/
+	.about-together {
+		padding: 50px 0 50px 0;
+	}
+	
+	.about-together__title {
+		width: 300px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 31.2px;
+	}
+
+	.about-together__title-line {
+		transform: translate(-138%, -80%);
+	}
+
+	.about-together__image {
+		padding-top: 40px;
+		width: 199px;
+	}
+
+	/*section № 2, about-values*/
+	.about-values {
+		padding: 45px 0 45px 0;
+	}
+
+	.about-values__item {
+		width: 100%;
+		padding: 80px 20px 30px 20px;
+		height: min-content;
+		margin-bottom: 0;
+	}
+
+	.about-values__item:nth-child(2) {
+		height: min-content;
+	}
+
+	.about-values__item:nth-child(n + 2) {
+		display: none;
+	}
+	
+	.about-values__item-image {
+		width: 110px;
+		transform: translate(-50%, -109%);
+	}
+
+	.about-values__item-title {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.about-values__item-text {
+		font-size: 14px;
+		line-height: 19.6px;
+		letter-spacing: 0.01em;
+		color: #4d4d52;
+	}
+
+	.carousel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/*section № 3, about-experts*/
+	.about-experts {
+		padding: 40px 0 45px 0;
+	}
+
+	.about-experts__title {
+		width: 315px;
+	}
+
+	.about-experts__subtitle {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22.4px;
+	}
+
+	.about-experts__title-line {
+		width: 160px;
+		transform: translate(93%, 0);
+	}
+
+	.about-experts__wrapper {
+		padding-top: 41px;
+	}
+
+	.about-experts__item:nth-child(n + 2) {
+		display: none;
+	}
+
+	.about-experts__image {
+		width: 120px;
+		height: 120px;
+	}
+
+	.about-experts__item-title {
+		margin: 20px 0 8px 0;
+		font-size: 18px;
+		line-height: 25.2px;
+	}
+
+	.about-experts__item-description {
+		font-size: 14px;
+		line-height: 19.6px;
+	}
+
+	/*section № 4, about-documents*/
+	.about-documents {
+		padding: 50px 0 80px 0;
+	}
+
+	.about-documents__subtitle {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 18.2px;
+	}
+
+	.about-documents__item {
+		min-height: 154px;
+		padding: 30px 20px;
+		text-align: center;
+	}
+
+	.about-documents__item:nth-child(n + 2) {
+		display: none;
+	}
+
+	.about-documents__item-image {
+		display: none;
+	}
+
+	.about-documents__item-title {
+		padding-top: 0;
+		margin-bottom: 8px;
+		font-size: 18px;
+		line-height: 25.2px;
+	}
+
+	.about-documents__item-text {
+		padding: 0;
+		font-size: 14px;
+		line-height: 19.6px;
+	}
+
+	.about-documents .carousel {
+		width: 43%;
+	}
+
+	/*section № 5, about-history*/
+	.about-history__wrapper {
+		padding: 30px 0 0 0;
+		grid-template-columns: 20px 1fr 20px;
+	}
+
+	.about-history__wrapper2 {
+		padding: 30px 0 0 0;
+		grid-template-columns: 20px 1fr 20px;
+	}
+
+	.about-history__photo img,
+	.about-history__photo2 img {
+		width: 120px;
+		height: 120px;
+	}
+
+	.about-history__quotes-top, 
+	.about-history__quotes-bottom {
+		width: 20px;
+	}
+
+	.about-history__text {
+		padding: 0;
+		font-size: 16px;
+		line-height: 22.4px;
+	}
+
+	.about-history__name {
+		font-size: 18px;
+		line-height: 25.2px;
+	}
+
+	.about-history__description {
+		font-size: 14px;
+		line-height: 19.6px;
+	}
+
+	/*section № 6, about-media*/
+	.about-media {
+		padding: 29px 0 37px 0;
+	}
+
+	.about-media__wrapper {
+		padding-top: 28px;
+	}
+
+	.about-media__logo img {
+		height: 21.27px;
+	}
 
 	/* ------------------------ Rates ------------------------ */
 
@@ -3822,12 +4033,12 @@ p {
 	}
 	.psychologyst-benefits-section {
 		margin: 24% 0 12% 0;
-		padding: 27% 8% 5% 8%;
+		padding: 90px 8% 5% 8%;
 	}
 	.psychologyst-benefits-section__icon {
 		max-width: 35%;
 		left: 33%;
-		top: -20%;
+		top: -50px;
 	}
 
 	.psychologyst-waitfromyou {
@@ -3855,17 +4066,58 @@ p {
 	.psychologyst-waitfromyou-item:nth-child(n + 3) {
 		display: none;
 	}
-
 	.psychologyst-4stepsforjob-wrapper {
-		grid-template-rows: 0.7fr 1.1fr 0.8fr 1fr 0.9fr 0.6fr;
+		grid-template-rows: 0.8fr repeat(4, 1fr) 0.6fr;
+	}
+	.psychologyst-4stepsforjob-title {
+		padding-bottom: 5%;
+	}	
+	.psychologyst-4stepsforjob-section {
+		margin: 0 12% 6% 10%;
+		padding: 17% 0 0 0;
+	}
+	#grid-area3_2 {
+		padding: 25% 0 0 0;
+	}
+	#grid-area3_4 {
+		padding: 32% 0 0 0;
 	}
 	.psychologyst-4stepsforjob-section__iconnumber {
-		max-width: 20%;
-		max-height: none;
-		top: -80%;
-		left: 45%;
+		max-height: 25%;
 	}
-	
+
+	.psychologyst-4stepsforjob-section__iconoval {
+		max-height: 22%;
+	}
+	#iconnum1 {
+		top: -15%;
+	}
+	#iconov1 {
+		top: -13%;
+		left: 40%;
+	}
+	#iconnum2 {
+		top: -2%;
+	}
+	#iconov2 {
+		top: -1%;
+		left: 44%;
+	}
+	#iconnum3 {
+		top: -16%;
+	}
+	#iconov3 {
+		top: -16%;
+		left: 44%;
+	}
+	#iconnum4 {
+		top: 11%;
+	}
+	#iconov4 {
+		top: 13%;
+		left: 44%;
+	}
+
 	.psychologyst-4stepsforjob-button {
 		width: 290px;
 		height: 50px;
@@ -3966,11 +4218,58 @@ p {
 	}
 
 	/* ------------------------ About ------------------------ */
-
+	/*section № 3, about-experts*/
+	.about-experts__title-line {
+		width: 145px;
+		transform: translate(90%, 0);
+	}
 	/* ------------------------ Rates ------------------------ */
 
 	/* ------------------------ Psychologists ------------------------ */
-
+	
+	.psychologyst-benefits-section__icon {
+		max-width: 40%;
+		left: 30%;
+	}
+	.psychologyst-4stepsforjob-wrapper {
+		grid-template-rows: 0.5fr repeat(4, 1fr) 0.4fr;
+	}
+	.psychologyst-4stepsforjob-section {
+		padding: 30% 0 0 0;
+	}
+	#grid-area3_2 {
+		padding: 35% 0 0 0;
+	}
+	#grid-area3_4 {
+		padding: 45% 0 0 0;
+	}
+	.psychologyst-4stepsforjob-section__iconnumber {
+		max-height: 20%;
+	}
+	.psychologyst-4stepsforjob-section__iconoval {
+		max-height: 18%;
+	}
+	#iconnum1 {
+		top: -4%;
+	}
+	#iconov1 {
+		top: -3%;
+		left: 39%;
+	}
+	#iconnum2 {
+		top: 1%;
+	}
+	#iconov2 {
+		top: 2%;
+		left: 43%;
+	}
+	#iconnum3 {
+		top: -6%;
+	}
+	#iconov3 {
+		top: -6%;
+		left: 44%;
+	}
 	/* ------------------------ Contacts ------------------------ */
 
 	.contacts {
