@@ -74,6 +74,8 @@ p {
 
 .carousel__dot_comfort,
 .carousel__dot_quality,
+.carousel__dot_values,
+.carousel__dot_documents,
 .carousel__dot_waitfromyou {
 	width: 10px;
 	height: 10px;
@@ -993,9 +995,28 @@ p {
 }
 
 .about-experts__wrapper {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 94px;
+	margin-top: 94px;
+}
+
+.about-expert__arrow-left,
+.about-expert__arrow-right {
+	display: none;
+	position: absolute;
+}
+
+.about-expert__arrow-left {
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.about-expert__arrow-right {
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .about-experts__item {
@@ -2110,7 +2131,7 @@ p {
 	}
 
 	.about-experts__wrapper {
-		padding-top: 75px;
+		margin-top: 75px;
 	}
 
 	.about-experts__title {
@@ -2337,7 +2358,7 @@ p {
 	}
 
 	.about-experts__wrapper {
-		padding-top: 65px;
+		margin-top: 65px;
 	}
 
 	.about-experts__title {
@@ -3731,10 +3752,15 @@ p {
 	}
 
 	.about-experts__wrapper {
-		padding-top: 41px;
+		margin-top: 41px;
 	}
 
-	.about-experts__item:nth-child(n + 2) {
+	.about-expert__arrow-left,
+	.about-expert__arrow-right {
+		display: block;
+	}
+
+	.about-experts__item:nth-child(n + 3) {
 		display: none;
 	}
 
@@ -4289,9 +4315,6 @@ p {
 
 	.contacts {
 		padding: 50px 0;
-	}
-
-	.contacts__header {
 	}
 
 	.contacts__img {
