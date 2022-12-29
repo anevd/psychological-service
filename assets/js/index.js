@@ -77,3 +77,27 @@ for (let i = 0; i < switchQuality.length; i++) {
 		itemQuality[i].style.display = "block";
 	});
 }
+
+// Карусель для about-values
+/* let switchValues = document.querySelectorAll(".carousel__dot_values");
+let itemValues = document.querySelectorAll(".about-values__item");
+for (let i = 0; i < switchValues.length; i++) {
+	switchValues[i].addEventListener("click", function () {
+		switchValues.forEach((el) => el.classList.remove("carousel__dot_active"));
+		switchValues[i].classList.toggle("carousel__dot_active");
+		itemValues.forEach((el) => (el.style.display = "none"));
+		itemValues[i].style.display = "block";
+	});
+} */
+
+// Карусель для psychologyst-waitfromyou
+let switchWait = document.querySelectorAll(".carousel__dot_waitfromyou");
+let itemWait = document.querySelectorAll(".psychologyst-waitfromyou-item");
+for (let i = 0; i < switchWait.length; i++) {
+	switchWait[i].addEventListener("click", function () {
+		switchWait.forEach((el) => el.classList.remove("carousel__dot_active"));
+		switchWait[i].classList.toggle("carousel__dot_active");
+		itemWait.forEach((el) => (el.style.display = "none"));
+		itemWait[i].style.display = "block";
+	});
+}
