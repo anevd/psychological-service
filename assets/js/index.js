@@ -89,45 +89,48 @@ for (let i = 0; i < switchValues.length; i++) {
 
 // Карусель для about-experts
 
-let buttonLeftExperts = document.querySelector(".about-expert__arrow-left");
-let buttonRightExperts = document.querySelector(".about-expert__arrow-right");
-let cardExperts = document.querySelectorAll(".about-experts__item");
-let i = 0;
-buttonRightExperts.onclick = function () {
-	if (i < cardExperts.length - 1) {
-		cardExperts[i].style.display = "none";
-		i = i + 1;
-		cardExperts[i].style.display = "block";
-	} else if (i == cardExperts.length - 1) {
-		cardExperts[i].style.display = "none";
-		i = i + 1;
-	}
-	if (i > cardExperts.length - 1) {
-		i = 0;
-		cardExperts[i].style.display = "block";
-	}
-};
-
-buttonLeftExperts.onclick = function () {
-	if (i == 0) {
-		while (i < cardExperts.length - 1) {
+if (document.querySelectorAll(".about-experts__item").length) {
+	let buttonLeftExperts = document.querySelector(".about-expert__arrow-left");
+	let buttonRightExperts = document.querySelector(".about-expert__arrow-right");
+	let cardExperts = document.querySelectorAll(".about-experts__item");
+	let i = 0;
+	buttonRightExperts.onclick = function () {
+		if (i < cardExperts.length - 1) {
 			cardExperts[i].style.display = "none";
-			i++;
+			i = i + 1;
+			cardExperts[i].style.display = "block";
+		} else if (i == cardExperts.length - 1) {
+			cardExperts[i].style.display = "none";
+			i = i + 1;
 		}
-		i = cardExperts.length - 1;
-		cardExperts[i].style.display = "block";
-	} else if (i < cardExperts.length - 1 && i > 0) {
-		cardExperts[i].style.display = "none";
-		i = i - 1;
-		cardExperts[i].style.display = "block";
-	} else if (i == cardExperts.length - 1) {
-		cardExperts[i].style.display = "none";
-		i = i - 1;
-		cardExperts[i].style.display = "block";
-	}
-};
+		if (i > cardExperts.length - 1) {
+			i = 0;
+			cardExperts[i].style.display = "block";
+		}
+	};
+
+	buttonLeftExperts.onclick = function () {
+		if (i == 0) {
+			while (i < cardExperts.length - 1) {
+				cardExperts[i].style.display = "none";
+				i++;
+			}
+			i = cardExperts.length - 1;
+			cardExperts[i].style.display = "block";
+		} else if (i < cardExperts.length - 1 && i > 0) {
+			cardExperts[i].style.display = "none";
+			i = i - 1;
+			cardExperts[i].style.display = "block";
+		} else if (i == cardExperts.length - 1) {
+			cardExperts[i].style.display = "none";
+			i = i - 1;
+			cardExperts[i].style.display = "block";
+		}
+	};
+}
 
 // Карусель для about-documents
+
 let switchDocuments = document.querySelectorAll(".carousel__dot_documents");
 let itemDocuments = document.querySelectorAll(".about-documents__item");
 for (let i = 0; i < switchDocuments.length; i++) {
