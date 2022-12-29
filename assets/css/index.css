@@ -1550,7 +1550,6 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
 }
 
 .rates-steps__runct-nmb {
@@ -1560,8 +1559,8 @@ p {
 	align-items: center;
 }
 
-.rates-steps__runct-nmb-image_1 ,
-.rates-steps__runct-nmb-image_2 ,
+.rates-steps__runct-nmb-image_1,
+.rates-steps__runct-nmb-image_2,
 .rates-steps__runct-nmb-image_3 {
 	position: relative;
 	z-index: 1;
@@ -1997,11 +1996,17 @@ p {
 }
 
 .contacts__descr {
+	display: block;
 	margin-top: 15px;
 	font-size: 20px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
 	color: #4d4d52;
+	text-decoration: none;
+}
+
+.contacts__descr:hover {
+	color: #7872b9;
 }
 
 /* ------------------------ Media queries ------------------------ */
@@ -2429,9 +2434,12 @@ p {
 		width: 100%;
 	}
 
-	.rates-price__row1, .rates-price__title,
-	.rates-price__subtitle, .rates-price__btn,
-	.rates-price__row4, .rates-price__row5  {
+	.rates-price__row1,
+	.rates-price__title,
+	.rates-price__subtitle,
+	.rates-price__btn,
+	.rates-price__row4,
+	.rates-price__row5 {
 		font-size: 1.7vw;
 	}
 
@@ -2455,7 +2463,8 @@ p {
 		margin-top: 100px;
 	}
 
-	.rates-care , .rates-care__wrapper {
+	.rates-care,
+	.rates-care__wrapper {
 		width: 100%;
 		margin-top: 120px;
 		margin-bottom: 0;
@@ -2484,7 +2493,7 @@ p {
 		margin-top: 3%;
 	}
 
-	.rates-steps ,
+	.rates-steps,
 	.rates-steps__wrapper {
 		width: 100%;
 	}
@@ -2711,11 +2720,13 @@ p {
 
 	/* ------------------------ Rates ------------------------ */
 
-	.rates-choice__title, .rates-application__content_title {
+	.rates-choice__title,
+	.rates-application__content_title {
 		font-size: 3.8vw;
 	}
 
-	.rates-choice__subtitle, .rates-application__content_subtitle {
+	.rates-choice__subtitle,
+	.rates-application__content_subtitle {
 		font-size: 2.2vw;
 	}
 
@@ -2738,7 +2749,7 @@ p {
 		margin-left: 4%;
 	}
 
-	.rates-steps__runct-nmb, 
+	.rates-steps__runct-nmb,
 	.rates-steps__arrow_1,
 	.rates-steps__arrow_2 {
 		width: 100%;
@@ -2753,7 +2764,8 @@ p {
 		margin-left: 8px;
 	}
 
-	.img-2, .img-3 {
+	.img-2,
+	.img-3 {
 		width: 90%;
 		margin-left: 5px;
 	}
@@ -3235,7 +3247,7 @@ p {
 	}
 
 	.rates-choice__title,
-	.rates-steps__title{
+	.rates-steps__title {
 		font-size: 3.5vw;
 	}
 
@@ -3243,13 +3255,13 @@ p {
 		width: 32%;
 	}
 
-	.rates-price__content:nth-child(n+4) {
+	.rates-price__content:nth-child(n + 4) {
 		display: none;
 	}
 
-	.rates-application__content, 
+	.rates-application__content,
 	.rates-application__content-screenshot {
-		width:43%;
+		width: 43%;
 	}
 
 	.rates-application__img {
@@ -3270,8 +3282,9 @@ p {
 		margin-top: 10%;
 	}
 
-	.img-2, .img-3 {
-		width:80%;
+	.img-2,
+	.img-3 {
+		width: 80%;
 		margin-top: 20%;
 	}
 
@@ -3305,7 +3318,7 @@ p {
 	}
 	.psychologyst-waitfromyou-sectionwithicon__text,
 	.psychologyst-waitfromyou-section__text {
-			font-size: 2.5vw;
+		font-size: 2.5vw;
 	}
 	.psychologyst-practiceonline-wrapper {
 		flex-direction: column;
@@ -3637,7 +3650,7 @@ p {
 	.about-together {
 		padding: 50px 0 50px 0;
 	}
-	
+
 	.about-together__title {
 		width: 300px;
 		font-weight: 700;
@@ -3673,7 +3686,7 @@ p {
 	.about-values__item:nth-child(n + 2) {
 		display: none;
 	}
-	
+
 	.about-values__item-image {
 		width: 110px;
 		transform: translate(-50%, -109%);
@@ -3800,7 +3813,7 @@ p {
 		height: 120px;
 	}
 
-	.about-history__quotes-top, 
+	.about-history__quotes-top,
 	.about-history__quotes-bottom {
 		width: 20px;
 	}
@@ -3845,11 +3858,13 @@ p {
 		width: 100%;
 	}
 
-	.rates-choice__content, .rates-choice__img {
+	.rates-choice__content,
+	.rates-choice__img {
 		width: 100%;
 	}
 
-	.rates-choice__title, #price {
+	.rates-choice__title,
+	#price {
 		font-weight: 700;
 		font-size: 32px;
 		line-height: 130%;
@@ -3877,7 +3892,7 @@ p {
 	.rates-price__content {
 		width: 95%;
 	}
-	.rates-price__content:nth-child(n+7) {
+	.rates-price__content:nth-child(n + 7) {
 		display: none;
 	}
 
@@ -3935,7 +3950,7 @@ p {
 
 	.rates-form__promocode {
 		width: 300px;
-	} 
+	}
 
 	.rates-application__wrapper {
 		display: flex;
@@ -3945,7 +3960,7 @@ p {
 		height: 895px;
 	}
 
-	.rates-application__content, 
+	.rates-application__content,
 	.rates-application__content-screenshot {
 		width: 98%;
 	}
@@ -4071,7 +4086,7 @@ p {
 	}
 	.psychologyst-4stepsforjob-title {
 		padding-bottom: 5%;
-	}	
+	}
 	.psychologyst-4stepsforjob-section {
 		margin: 0 12% 6% 10%;
 		padding: 17% 0 0 0;
@@ -4226,7 +4241,7 @@ p {
 	/* ------------------------ Rates ------------------------ */
 
 	/* ------------------------ Psychologists ------------------------ */
-	
+
 	.psychologyst-benefits-section__icon {
 		max-width: 40%;
 		left: 30%;
@@ -4273,20 +4288,36 @@ p {
 	/* ------------------------ Contacts ------------------------ */
 
 	.contacts {
-		padding: 30px 0 35px 0;
+		padding: 50px 0;
 	}
 
 	.contacts__header {
-		flex-direction: column;
+	}
+
+	.contacts__img {
+		width: 20%;
+	}
+
+	.contacts__item {
+		width: 90%;
 	}
 
 	.contacts__title {
-		padding-left: 0;
+		font-size: 20px;
+		padding-left: 30px;
 		margin-top: 15px;
 	}
 
+	.contacts__item-title {
+		font-size: 18px;
+	}
+
+	.contacts__descr {
+		margin-top: 8px;
+		font-size: 14px;
+	}
+
 	.contacts__wrapper {
-		margin-top: 40px;
-		text-align: center;
+		margin-top: 30px;
 	}
 }
