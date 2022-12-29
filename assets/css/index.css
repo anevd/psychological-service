@@ -1419,7 +1419,7 @@ p {
 }
 
 .rates-application__img {
-	height: 59%;
+	height: 70%;
 	object-fit: contain;
 	position: absolute;
 }
@@ -1529,8 +1529,11 @@ p {
 /*rates-steps*/
 
 .rates-steps {
-	width: 100vw;
+	width: 100%;
 	height: 470px;
+}
+.rates-steps__wrapper {
+	width: 100%;
 }
 
 .rates-steps__title {
@@ -1539,36 +1542,42 @@ p {
 	line-height: 130%;
 	letter-spacing: 0.02em;
 	color: #7872b9;
-	margin-left: 30%;
+	margin-left: 25%;
+	margin-bottom: 80px;
 }
 
 .rates-steps__runct {
 	display: flex;
 	flex-direction: row;
-	margin-top: 86px;
+	justify-content: space-around;
+
 }
 
-.rates-steps__runct-numb {
+.rates-steps__runct-nmb {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.rates-steps__runct-nmb-img {
-	padding-left: 6em;
-	padding-bottom: 1em;
-	background-image: url(../icons/spot.svg);
-	background-size: 40%;
-	background-repeat: no-repeat;
-	background-position: center;
+.rates-steps__runct-nmb-image_1 ,
+.rates-steps__runct-nmb-image_2 ,
+.rates-steps__runct-nmb-image_3 {
+	position: relative;
+	z-index: 1;
+	width: 89px;
+	height: 100px;
 }
 
-.rates-steps__runct-nmb-image_1 {
-	height: 80px;
-	margin-bottom: 1em;
+.rates-steps__runct-numb-crcl {
+	position: absolute;
+	z-index: -1;
+	width: 120px;
+	height: 110px;
+	margin-top: 25px;
 }
-
 .rates-steps__runct-nmb-text {
-	margin-top: 2%;
+	margin-top: 20%;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 140%;
@@ -1577,21 +1586,9 @@ p {
 	color: #4d4d52;
 }
 
-.rates-steps__runct-nmb-image_2,
-.rates-steps__runct-nmb-image_3 {
-	height: 80px;
-	padding-right: 6em;
-	margin-bottom: 1em;
-}
-
 .rates-steps__arrow_1,
 .rates-steps__arrow_2 {
-	margin-left: 1em;
-	margin-right: 1em;
-}
-
-.rates-steps__arrow_2 {
-	margin-top: 4em;
+	align-self: center;
 }
 
 /* ------------------------ Psychologists ------------------------ */
@@ -2158,12 +2155,11 @@ p {
 	/* ------------------------ Rates ------------------------ */
 
 	.rates-choice__wrapper {
-		width: 90vw;
+		width: 100%;
 	}
 
 	.rates-application__wrapper {
 		width: 90%;
-		height: 90%;
 	}
 
 	.rates-application__content-screenshot {
@@ -2425,47 +2421,82 @@ p {
 		width: 100%;
 	}
 
-	.rates-choice__img {
-		width: 100%;
-		margin-left: 10%;
+	.rates-choice__content {
+		width: 60%;
 	}
 
-	.rates-price__wrapper {
-		width: 100vw;
+	.rates-price {
+		width: 100%;
+	}
+
+	.rates-price__row1, .rates-price__title,
+	.rates-price__subtitle, .rates-price__btn,
+	.rates-price__row4, .rates-price__row5  {
+		font-size: 1.7vw;
 	}
 
 	.rates-application {
-		height: 95vh;
-		width: 100vw;
+		width: 100%;
+	}
+
+	.rates-application__wrapper {
+		width: 100%;
 	}
 
 	.rates-application__content {
-		width: 50vw;
+		width: 50%;
+		margin-top: 40px;
+		font-size: 4vw;
 	}
 
-	.rates-care__wrapper {
-		height: 60vh;
-		width: 95vw;
+	.rates-application__content-screenshot {
+		width: 48%;
+		margin-left: 15px;
+		margin-top: 100px;
+	}
+
+	.rates-care , .rates-care__wrapper {
+		width: 100%;
+		margin-top: 120px;
+		margin-bottom: 0;
 	}
 
 	.rates-care__block-content {
-		width: 45vw;
+		width: 42%;
+		margin: 40px;
+	}
+
+	.rates-care__title {
+		font-size: 3vw;
+	}
+
+	.rates-care__subtitle_1 {
+		font-size: 2vw;
+	}
+
+	.rates-care__subtitle_2 {
+		font-size: 1.7vw;
 	}
 
 	.rates-care__block-img {
-		width: 10vw;
-		margin-left: 50%;
-		margin-top: 10%;
+		width: 48%;
+		margin-left: 45%;
+		margin-top: 3%;
 	}
 
-	.rates-steps {
-		width: 98vw;
-	}
-
+	.rates-steps ,
 	.rates-steps__wrapper {
-		width: 98vw;
+		width: 100%;
 	}
 
+	.rates-steps__title {
+		margin-left: 15%;
+		margin-bottom: 10%;
+	}
+
+	.rates-steps__runct-nmb-text {
+		font-size: 1.7vw;
+	}
 	/* ------------------------ Psychologists ------------------------ */
 
 	/* ------------------------ Contacts ------------------------ */
@@ -2679,6 +2710,53 @@ p {
 	}
 
 	/* ------------------------ Rates ------------------------ */
+
+	.rates-choice__title, .rates-application__content_title {
+		font-size: 3.8vw;
+	}
+
+	.rates-choice__subtitle, .rates-application__content_subtitle {
+		font-size: 2.2vw;
+	}
+
+	.rates-application__content-runct_text {
+		font-size: 1.8vw;
+	}
+
+	.rates-application__img {
+		width: 40%;
+		margin-left: 25px;
+	}
+
+	.rates-care__block-img {
+		width: 40%;
+		margin-top: 6%;
+	}
+
+	.rates-care__block-img_pctr {
+		width: 85%;
+		margin-left: 4%;
+	}
+
+	.rates-steps__runct-nmb, 
+	.rates-steps__arrow_1,
+	.rates-steps__arrow_2 {
+		width: 100%;
+	}
+
+	.rates-steps__runct-numb-crcl {
+		width: 10%;
+	}
+
+	.img-1 {
+		width: 50%;
+		margin-left: 8px;
+	}
+
+	.img-2, .img-3 {
+		width: 90%;
+		margin-left: 5px;
+	}
 
 	/* ------------------------ Psychologists ------------------------ */
 	.psychologyst-practiceonline-content__title,
@@ -3146,6 +3224,60 @@ p {
 	}
 
 	/* ------------------------ Rates ------------------------ */
+
+	.rates-choice__content {
+		width: 46%;
+	}
+
+	.rates-choice__img {
+		width: 95%;
+		margin-left: 3%;
+	}
+
+	.rates-choice__title,
+	.rates-steps__title{
+		font-size: 3.5vw;
+	}
+
+	.rates-price__content {
+		width: 32%;
+	}
+
+	.rates-price__content:nth-child(n+4) {
+		display: none;
+	}
+
+	.rates-application__content, 
+	.rates-application__content-screenshot {
+		width:43%;
+	}
+
+	.rates-application__img {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.rates-care__block-img {
+		margin-top: 10%;
+	}
+
+	.rates-steps__title {
+		margin-left: 21%;
+	}
+
+	.img-1 {
+		width: 50%;
+		margin-top: 10%;
+	}
+
+	.img-2, .img-3 {
+		width:80%;
+		margin-top: 20%;
+	}
+
+	.rates-steps__runct-numb-crcl {
+		width: 12%;
+	}
 
 	/* ------------------------ Psychologists ------------------------ */
 	.psychologyst-practiceonline-content__title,
@@ -3704,6 +3836,151 @@ p {
 
 	/* ------------------------ Rates ------------------------ */
 
+	.rates-choice__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.rates-choice__content, .rates-choice__img {
+		width: 100%;
+	}
+
+	.rates-choice__title, #price {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 130%;
+		letter-spacing: 0.02em;
+	}
+
+	.rates-choice__subtitle {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 140%;
+		letter-spacing: 0.01em;
+	}
+
+	.rates-choise__ullistration {
+		margin-top: 18%;
+	}
+
+	#rates-choice__btn {
+		margin-left: 10%;
+	}
+
+	.rates-price__wrapper {
+		justify-content: space-between;
+	}
+	.rates-price__content {
+		width: 95%;
+	}
+	.rates-price__content:nth-child(n+7) {
+		display: none;
+	}
+
+	.rates-price__row1 {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.02em;
+	}
+
+	.rates-price__title {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.01em;
+	}
+
+	.rates-price__subtitle {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.01em;
+	}
+
+	.rates-price__btn {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.02em;
+	}
+
+	.rates-price__row4 {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.02em;
+	}
+
+	.rates-price__row5 {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.01em;
+	}
+
+	.rates-form {
+		height: 205px;
+	}
+
+	.rates-form__promocode {
+		width: 300px;
+	} 
+
+	.rates-application__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+		width: 100%;
+		height: 895px;
+	}
+
+	.rates-application__content, 
+	.rates-application__content-screenshot {
+		width: 98%;
+	}
+
+	.rates-application__content_title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 130%;
+		letter-spacing: 0.02em;
+	}
+
+	.rates-application__content_subtitle {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 140%;
+		letter-spacing: 0.01em;
+	}
+
+	.rates-application__content-runct_text {
+		font-size: 14px;
+	}
+
+	.rates-application__content-screenshot {
+		display: none;
+	}
+
+	.rates-application__img {
+		display: none;
+	}
+
+	#rates-application__btn {
+		width: 295px;
+		height: 60px;
+		font-size: 17px;
+	}
 	/* ------------------------ Psychologists ------------------------ */
 	.psychologyst-practiceonline-content__title {
 		font-size: 24px;
@@ -3808,6 +4085,7 @@ p {
 	.psychologyst-4stepsforjob-section__iconnumber {
 		max-height: 25%;
 	}
+
 	.psychologyst-4stepsforjob-section__iconoval {
 		max-height: 22%;
 	}
@@ -3839,6 +4117,7 @@ p {
 		top: 13%;
 		left: 44%;
 	}
+
 	.psychologyst-4stepsforjob-button {
 		width: 290px;
 		height: 50px;
