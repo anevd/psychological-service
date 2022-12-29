@@ -3165,13 +3165,15 @@ p {
 	.psychologyst-practiceonline-content__button,
 	.psychologyst-benefits-sectionwithicon__text,
 	.psychologyst-benefits-section__text,
-	.psychologyst-waitfromyou-sectionwithicon__text,
-	.psychologyst-waitfromyou-section__text,
 	.psychologyst-benefits-section__text,
 	.psychologyst-benefits-section__violettext,
 	.psychologyst-4stepsforjob-section__text,
 	.psychologyst-4stepsforjob-button {
 		font-size: 2.8vw;
+	}
+	.psychologyst-waitfromyou-sectionwithicon__text,
+	.psychologyst-waitfromyou-section__text {
+			font-size: 2.5vw;
 	}
 	.psychologyst-practiceonline-wrapper {
 		flex-direction: column;
@@ -3754,12 +3756,12 @@ p {
 	}
 	.psychologyst-benefits-section {
 		margin: 24% 0 12% 0;
-		padding: 27% 8% 5% 8%;
+		padding: 90px 8% 5% 8%;
 	}
 	.psychologyst-benefits-section__icon {
 		max-width: 35%;
 		left: 33%;
-		top: -20%;
+		top: -50px;
 	}
 
 	.psychologyst-waitfromyou {
@@ -3787,17 +3789,55 @@ p {
 	.psychologyst-waitfromyou-item:nth-child(n + 3) {
 		display: none;
 	}
-
 	.psychologyst-4stepsforjob-wrapper {
-		grid-template-rows: 0.7fr 1.1fr 0.8fr 1fr 0.9fr 0.6fr;
+		grid-template-rows: 0.8fr repeat(4, 1fr) 0.6fr;
+	}
+	.psychologyst-4stepsforjob-title {
+		padding-bottom: 5%;
+	}	
+	.psychologyst-4stepsforjob-section {
+		margin: 0 12% 6% 10%;
+		padding: 17% 0 0 0;
+	}
+	#grid-area3_2 {
+		padding: 25% 0 0 0;
+	}
+	#grid-area3_4 {
+		padding: 32% 0 0 0;
 	}
 	.psychologyst-4stepsforjob-section__iconnumber {
-		max-width: 20%;
-		max-height: none;
-		top: -80%;
-		left: 45%;
+		max-height: 25%;
 	}
 	.psychologyst-4stepsforjob-section__iconoval {
+		max-height: 22%;
+	}
+	#iconnum1 {
+		top: -15%;
+	}
+	#iconov1 {
+		top: -13%;
+		left: 40%;
+	}
+	#iconnum2 {
+		top: -2%;
+	}
+	#iconov2 {
+		top: -1%;
+		left: 44%;
+	}
+	#iconnum3 {
+		top: -16%;
+	}
+	#iconov3 {
+		top: -16%;
+		left: 44%;
+	}
+	#iconnum4 {
+		top: 11%;
+	}
+	#iconov4 {
+		top: 13%;
+		left: 44%;
 	}
 	.psychologyst-4stepsforjob-button {
 		width: 290px;
@@ -3907,7 +3947,50 @@ p {
 	/* ------------------------ Rates ------------------------ */
 
 	/* ------------------------ Psychologists ------------------------ */
-
+	
+	.psychologyst-benefits-section__icon {
+		max-width: 40%;
+		left: 30%;
+	}
+	.psychologyst-4stepsforjob-wrapper {
+		grid-template-rows: 0.5fr repeat(4, 1fr) 0.4fr;
+	}
+	.psychologyst-4stepsforjob-section {
+		padding: 30% 0 0 0;
+	}
+	#grid-area3_2 {
+		padding: 35% 0 0 0;
+	}
+	#grid-area3_4 {
+		padding: 45% 0 0 0;
+	}
+	.psychologyst-4stepsforjob-section__iconnumber {
+		max-height: 20%;
+	}
+	.psychologyst-4stepsforjob-section__iconoval {
+		max-height: 18%;
+	}
+	#iconnum1 {
+		top: -4%;
+	}
+	#iconov1 {
+		top: -3%;
+		left: 39%;
+	}
+	#iconnum2 {
+		top: 1%;
+	}
+	#iconov2 {
+		top: 2%;
+		left: 43%;
+	}
+	#iconnum3 {
+		top: -6%;
+	}
+	#iconov3 {
+		top: -6%;
+		left: 44%;
+	}
 	/* ------------------------ Contacts ------------------------ */
 
 	.contacts {
